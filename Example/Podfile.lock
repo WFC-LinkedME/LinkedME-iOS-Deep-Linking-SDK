@@ -1,0 +1,16 @@
+PODS:
+  - LinkedME_iOS (1.5.4.4)
+
+DEPENDENCIES:
+  - LinkedME_iOS (from `../`)
+
+EXTERNAL SOURCES:
+  LinkedME_iOS:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LinkedME_iOS: abd7160ef9f6e1fc138090bbb0a767f1bc13356d
+
+PODFILE CHECKSUM: 85fd0c07670bfd17c5b63baaa5c592f1410e4d76
+
+COCOAPODS: 1.8.3

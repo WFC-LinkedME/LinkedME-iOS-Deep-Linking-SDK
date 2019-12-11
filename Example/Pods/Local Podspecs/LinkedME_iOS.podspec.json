@@ -1,0 +1,39 @@
+{
+  "name": "LinkedME_iOS",
+  "version": "1.5.4.4",
+  "summary": "A short description of LinkedME_LinkPage.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/LinkedME_iOS",
+  "xcconfig": {
+    "ENABLE_BITCODE": "YES",
+    "OTHER_CFLAGS": "-fembed-bitcode"
+  },
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Bindx": "487479@gmail.com"
+  },
+  "source": {
+    "git": "/Users/admin/Desktop/workspace/LinkPage/SDK/iOS-Deep-Linking-SDK",
+    "tag": "1.5.4.4"
+  },
+  "platforms": {
+    "ios": "6.0"
+  },
+  "source_files": [
+    "LinkedME_iOS/Classes/*.*",
+    "LinkedME_iOS/Classes/Public/*.*"
+  ],
+  "public_header_files": "LinkedME_iOS/Classes/Public/*.h",
+  "frameworks": [
+    "UIKit",
+    "CoreGraphics",
+    "CoreTelephony",
+    "Security",
+    "SystemConfiguration",
+    "WebKit",
+    "CoreLocation"
+  ]
+}
