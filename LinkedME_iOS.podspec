@@ -32,7 +32,7 @@ TODO: Add long description of the pod here.
 
   s.author           = { 'Bindx' => '487479@gmail.com' }
 
-  s.source           = { :git => 'https://github.com/WFC-LinkedME/LinkedME-iOS-Deep-Linking-SDK', :tag => s.version }
+  s.source           = { :git => '/Users/admin/Desktop/workspace/LinkPage/LinkedME-iOS-Deep-Linking-SDK', :tag => s.version }
 
   s.ios.deployment_target = '6.0'
 
