@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LinkedME_iOS'
-  s.version          = '1.5.4.4'
+  s.version          = '1.5.4.5'
   s.summary          = 'A short description of LinkedME_LinkPage.'
 
 # This description is used to generate tags and improve search results.

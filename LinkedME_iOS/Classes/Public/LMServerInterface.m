@@ -187,7 +187,7 @@
 
     NSData *postData = [LMEncodingUtils encodeDictionaryToJsonData:preparedParams];
     
-    NSString *para = [LMServerInterface parseParams:preparedParams];
+    NSString *para = [LMEncodingUtils encryptAES:[LMServerInterface parseParams:preparedParams] key:@"linkedme2017nble"];
     
     NSString *postLength = [NSString stringWithFormat:@"%lu", (unsigned long)[postData length]];
     

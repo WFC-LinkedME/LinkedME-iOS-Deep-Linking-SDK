@@ -345,7 +345,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "77C9804E-D228-4716-8D6A-0BB44238700F"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../LinkedME_iOS/Classes/LMInstallRequest.m"
@@ -357,14 +357,14 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "77C9804E-D228-4716-8D6A-0BB44238700F - f5b01eb6340266e7"
-                  shouldBeEnabled = "Yes"
+                  uuid = "77C9804E-D228-4716-8D6A-0BB44238700F - 43fca0624ea75789"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "-[LMInstallRequest makeRequest:key:callback:]"
                   moduleName = "LinkedME_iOS"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Desktop/workspace/LinkPage/open-source/LinkedME-iOS-Deep-Linking-SDK/LinkedME_iOS/Classes/LMInstallRequest.m"
+                  urlString = "file:///Users/admin/Desktop/workspace/LinkPage/LinkedME-iOS-Deep-Linking-SDK/LinkedME_iOS/Classes/LMInstallRequest.m"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "121"
@@ -372,14 +372,14 @@
                   offsetFromSymbolStart = "384">
                </Location>
                <Location
-                  uuid = "77C9804E-D228-4716-8D6A-0BB44238700F - f5b01eb6340266e7"
-                  shouldBeEnabled = "Yes"
+                  uuid = "77C9804E-D228-4716-8D6A-0BB44238700F - 43fca0624ea75789"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "-[LMInstallRequest makeRequest:key:callback:]"
                   moduleName = "LinkedME_iOS"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Desktop/workspace/LinkPage/open-source/LinkedME-iOS-Deep-Linking-SDK/LinkedME_iOS/Classes/LMInstallRequest.m"
+                  urlString = "file:///Users/admin/Desktop/workspace/LinkPage/LinkedME-iOS-Deep-Linking-SDK/LinkedME_iOS/Classes/LMInstallRequest.m"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "121"
@@ -393,7 +393,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "B7417574-6152-431A-94E2-C30BD0AFF00F"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../LinkedME_iOS/Classes/LMInstallRequest.m"
@@ -402,6 +402,38 @@
             startingLineNumber = "113"
             endingLineNumber = "113"
             landmarkName = "-makeRequest:key:callback:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "02D235A8-5C1E-467D-9E4C-6241DB7BB7CD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LinkedME_iOS/Classes/Public/LMServerInterface.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "-genericHTTPRequest:retryNumber:log:callback:retryHandler:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "47B6B0EF-0E21-4A92-AEEE-2A2188E1F58B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LinkedME_iOS/Classes/Public/LMServerInterface.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "-genericHTTPRequest:retryNumber:log:callback:retryHandler:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
