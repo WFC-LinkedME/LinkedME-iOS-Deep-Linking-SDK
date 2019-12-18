@@ -33,7 +33,7 @@
 #define LKME_KEY(LIVE) LIVE?[NSBundle mainBundle].infoDictionary[@"linkedme_key"][@"live"]:\
 [NSBundle mainBundle].infoDictionary[@"linkedme_key"][@"live"]
 
-#define SDK_VERSION             @"1.5.4.4"
+#define SDK_VERSION             @"1.5.4.5"
 
 #define LKME_PROD_ENV
 
