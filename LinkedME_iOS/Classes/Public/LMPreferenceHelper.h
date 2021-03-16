@@ -21,6 +21,7 @@
 @property (strong, nonatomic) NSDate   *lastStrongMatchDate;
 @property (strong, nonatomic) NSString *appVersion;
 @property (strong, nonatomic) NSString *deviceFingerprintID;
+@property (strong, nonatomic) NSString *deviceID;
 @property (strong, nonatomic) NSString *sessionID;
 @property (strong, nonatomic) NSString *identityID;
 @property (strong, nonatomic) NSString *linkClickIdentifier;
@@ -35,6 +36,7 @@
 @property (assign, nonatomic) BOOL explicitlyRequestedReferrable;
 @property (assign, nonatomic) BOOL isReferrable;
 @property (assign, nonatomic) BOOL isDebug;
+@property (assign, nonatomic) BOOL disableClipboardMatch;
 @property (assign, nonatomic) BOOL useHTTPS;
 @property (assign, nonatomic) BOOL disableLocation;
 @property (assign, nonatomic) BOOL shouldWaitForInit;
@@ -58,6 +60,8 @@
 - (NSString *)getUberURL:(NSString *)endpoint;
 
 + (NSString *)getSDKURL:(NSString *)endpoint;
+
+- (NSDate*) previousAppBuildDate;
 
 - (void)clearUserCreditsAndCounts;
 - (void)clearUserCredits;

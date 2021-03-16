@@ -7,6 +7,7 @@
 //
 
 #import "LMPreferenceHelper.h"
+#import "LMSystemObserver.h"
 #import "LMEncodingUtils.h"
 #import "LKMEConfig.h"
 #import "LinkedME.h"
@@ -63,6 +64,7 @@ NSString * const LKME_REQUEST_KEY_EXTERNAL_INTENT_URI = @"extra_uri_data";
             lastRunLinkedMeKey = _lastRunLinkedMeKey,
             appVersion = _appVersion,
             deviceFingerprintID = _deviceFingerprintID,
+            deviceID = _deviceID,
             sessionID = _sessionID,
             spotlightIdentifier = _spotlightIdentifier,
             identityID = _identityID,
@@ -77,6 +79,7 @@ NSString * const LKME_REQUEST_KEY_EXTERNAL_INTENT_URI = @"extra_uri_data";
             closeSession = _closeSession,
             isReferrable = _isReferrable,
             isDebug = _isDebug,
+            disableClipboardMatch = _disableClipboardMatch,
             useHTTPS = _useHTTPS,
             disableLocation = _disableLocation,
             shouldWaitForInit = _shouldWaitForInit,
@@ -133,6 +136,14 @@ NSString * const LKME_REQUEST_KEY_EXTERNAL_INTENT_URI = @"extra_uri_data";
     });
 
     return persistPrefsQueue;
+}
+
+- (NSDate*) previousAppBuildDate {
+    @synchronized (self) {
+        NSDate *date = (NSDate*) [self readObjectFromDefaults:@"_previousAppBuildDate"];
+        if ([date isKindOfClass:[NSDate class]]) return date;
+        return nil;
+    }
 }
 
 #pragma mark - Debug methods
@@ -298,6 +309,10 @@ NSString * const LKME_REQUEST_KEY_EXTERNAL_INTENT_URI = @"extra_uri_data";
     }
 }
 
+- (NSString *)deviceID {
+    return [LMSystemObserver identifierByKeychain];
+}
+
 - (NSString *)sessionID {
     if (!_sessionID) {
         _sessionID = [self readStringFromDefaults:LINKEDME_PREFS_KEY_SESSION_ID];
@@ -392,6 +407,7 @@ NSString * const LKME_REQUEST_KEY_EXTERNAL_INTENT_URI = @"extra_uri_data";
         [self writeObjectToDefaults:LINKEDME_REQUEST_KEY_EXTERNAL_INTENT_URI value:externalIntentURI];
     }
 }
+
 
 - (NSString *)closeSession {
     if (!_closeSession) {

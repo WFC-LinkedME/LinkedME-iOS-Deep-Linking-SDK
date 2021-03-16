@@ -35,6 +35,9 @@
     if (dictionary[[NSString stringWithFormat:@"~%@", LINKEDME_REQUEST_KEY_URL_TAGS]]) {
         linkProperties.tags = [LMEncodingUtils urlEncodedString:dictionary[[NSString stringWithFormat:@"~%@", LINKEDME_REQUEST_KEY_URL_TAGS]]];
     }
+    if (dictionary[[NSString stringWithFormat:@"~%@", LINKEDME_REQUEST_KEY_URL_STAGE]]) {
+           linkProperties.state = [LMEncodingUtils urlEncodedString:dictionary[[NSString stringWithFormat:@"~%@", LINKEDME_REQUEST_KEY_URL_STAGE]]];
+       }
     if (dictionary[[NSString stringWithFormat:@"~%@", LINKEDME_REQUEST_KEY_URL_FEATURE]]) {
         linkProperties.feature = [LMEncodingUtils urlEncodedString: dictionary[[NSString stringWithFormat:@"~%@", LINKEDME_REQUEST_KEY_URL_FEATURE]]];
     }

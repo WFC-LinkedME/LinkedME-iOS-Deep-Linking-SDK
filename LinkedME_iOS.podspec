@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LinkedME_iOS'
-  s.version          = '1.5.4.5'
+  s.version          = '1.5.5.4'
   s.summary          = 'A short description of LinkedME_LinkPage.'
 
 # This description is used to generate tags and improve search results.
@@ -32,7 +32,8 @@ TODO: Add long description of the pod here.
 
   s.author           = { 'Bindx' => '487479@gmail.com' }
 
-  s.source           = { :git => '/Users/admin/Desktop/workspace/LinkPage/LinkedME-iOS-Deep-Linking-SDK', :tag => s.version }
+  s.source           = { :git => '/Users/bindx/Desktop/workspace/LinkPage/LinkedME-iOS-Deep-Linking-SDK', :tag => s.version }
+  
 
   s.ios.deployment_target = '6.0'
 

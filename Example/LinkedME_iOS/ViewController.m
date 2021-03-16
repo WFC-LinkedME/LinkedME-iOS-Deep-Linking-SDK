@@ -12,6 +12,7 @@
 
 #import "LinkedME.h"
 #import "LMUniversalObject.h"
+#import "LMPreferenceHelper.h"
 
 //#import <StoreKit/StoreKit.h>
 
@@ -26,11 +27,11 @@
     NSDictionary *adInfo;
 }
 
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    NSLog(@"DeviceID：%@",[LMPreferenceHelper preferenceHelper].deviceID);
     /*----------------------Spotlight-------------------------*/
     
     NSSet *set5 = [NSSet setWithObjects:@"yy7", nil];
@@ -54,9 +55,9 @@
      */
 
     
-    [[LinkedME getInstance] createDiscoverableContentWithTitle:@"LinkedME 国内第一家企业级深度链接" description:@"让APP不再是信息孤岛!" thumbnailUrl:[NSURL URLWithString:@"http://7xq8b0.com1.z0.glb.clouddn.com/logo.png"] linkParams:dict type:@"" publiclyIndexable:NO keywords:set5 expirationDate:nil spotlightIdentifier:@"bbcc" spotlightCallback:^(NSString *url, NSString *spotlightIdentifier, NSError *error) {
-        //LMUniversalObject
-    }];
+//    [[LinkedME getInstance] createDiscoverableContentWithTitle:@"LinkedME 国内第一家企业级深度链接" description:@"让APP不再是信息孤岛!" thumbnailUrl:[NSURL URLWithString:@"http://7xq8b0.com1.z0.glb.clouddn.com/logo.png"] linkParams:dict type:@"" publiclyIndexable:NO keywords:set5 expirationDate:nil spotlightIdentifier:@"bbcc" spotlightCallback:^(NSString *url, NSString *spotlightIdentifier, NSError *error) {
+//        //LMUniversalObject
+//    }];
     
 }
 

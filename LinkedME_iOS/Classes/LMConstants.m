@@ -153,6 +153,7 @@ NSString * const LINKEDME_REQUEST_KEY_URL_ALIAS = @"alias";
 NSString * const LINKEDME_REQUEST_KEY_URL_CHANNEL = @"channel";
 NSString * const LINKEDME_REQUEST_KEY_URL_FEATURE = @"feature";
 NSString * const LINKEDME_REQUEST_KEY_URL_STAGE = @"stage";
+NSString * const LINKEDME_REQUEST_KEY_URL_STATE = @"state";
 NSString * const LINKEDME_REQUEST_KEY_URL_DURATION = @"duration";
 NSString * const LKME_REQUEST_KEY_URL_DATA = @"params";
 NSString * const LINKEDME_REQUEST_KEY_URL_IGNORE_UA_STRING = @"ignore_ua_string";

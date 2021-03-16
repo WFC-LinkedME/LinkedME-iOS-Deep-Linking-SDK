@@ -43,8 +43,6 @@
 #import <CoreSpotlight/CoreSpotlight.h>
 #endif
 
-
-
 NSString *const LINKEDME_FEATURE_TAG_SHARE = @"share";
 NSString *const LINKEDME_FEATURE_TAG_REFERRAL = @"referral";
 NSString *const LINKEDME_FEATURE_TAG_INVITE = @"invite";
@@ -268,6 +266,10 @@ NSString *const LINKEDME_PUSH_NOTIFICATION_PAYLOAD_KEY = @"linkedme";
 //设置Debug模式-实例方法
 - (void)setDebug {
     self.preferenceHelper.isDebug = YES;
+}
+
+- (void)disableClipboardMatch{
+    self.preferenceHelper.disableClipboardMatch = YES;
 }
 
 - (void)getSafariCookice:(BOOL)status{
@@ -828,6 +830,7 @@ automaticallyDisplayDeepLinkController:(BOOL)automaticallyDisplayController {
                    andChannel:(NSString *)channel
                    andFeature:(NSString *)feature
                      andStage:(NSString *)stage
+                     andState:(BOOL)state
                   andCallback:(callbackWithUrl)callback {
   [self generateShortUrl:tags
                 andAlias:alias
@@ -837,6 +840,7 @@ automaticallyDisplayDeepLinkController:(BOOL)automaticallyDisplayController {
               andFeature:feature
                 andStage:stage
                andParams:params
+                andState:(BOOL)state
              andCallback:callback];
 }
 
@@ -937,69 +941,6 @@ automaticallyDisplayDeepLinkController:(BOOL)automaticallyDisplayController {
     }
 }
 
-
-
-#pragma mark - Referral methods
-
-//- (NSString *)getReferralUrlWithParams:(NSDictionary *)params
-//                               andTags:(NSArray *)tags
-//                            andChannel:(NSString *)channel {
-//  return [self generateShortUrl:tags
-//                       andAlias:nil
-//                        andType:LinkedMELinkTypeUnlimitedUse
-//               andMatchDuration:0
-//                     andChannel:channel
-//                     andFeature:LINKEDME_FEATURE_TAG_REFERRAL
-//                       andStage:nil
-//                      andParams:params
-//                 ignoreUAString:nil
-//              forceLinkCreation:NO];
-//}
-//
-//- (NSString *)getReferralUrlWithParams:(NSDictionary *)params
-//                            andChannel:(NSString *)channel {
-//  return [self generateShortUrl:nil
-//                       andAlias:nil
-//                        andType:LinkedMELinkTypeUnlimitedUse
-//               andMatchDuration:0
-//                     andChannel:channel
-//                     andFeature:LINKEDME_FEATURE_TAG_REFERRAL
-//                       andStage:nil
-//                      andParams:params
-//                 ignoreUAString:nil
-//              forceLinkCreation:NO];
-//}
-//
-//- (void)getReferralUrlWithParams:(NSDictionary *)params
-//                         andTags:(NSArray *)tags
-//                      andChannel:(NSString *)channel
-//                     andCallback:(callbackWithUrl)callback {
-//  [self generateShortUrl:tags
-//                andAlias:nil
-//                 andType:LinkedMELinkTypeUnlimitedUse
-//        andMatchDuration:0
-//              andChannel:channel
-//              andFeature:LINKEDME_FEATURE_TAG_REFERRAL
-//                andStage:nil
-//               andParams:params
-//             andCallback:callback];
-//}
-//
-//- (void)getReferralUrlWithParams:(NSDictionary *)params
-//                      andChannel:(NSString *)channel
-//                     andCallback:(callbackWithUrl)callback {
-//  [self generateShortUrl:nil
-//                andAlias:nil
-//                 andType:LinkedMELinkTypeUnlimitedUse
-//        andMatchDuration:0
-//              andChannel:channel
-//              andFeature:LINKEDME_FEATURE_TAG_REFERRAL
-//                andStage:nil
-//               andParams:params
-//             andCallback:callback];
-//}
-
-
 #pragma mark - 私有方法
 
 + (LinkedME *)getInstanceInternal:(NSString *)key
@@ -1015,10 +956,6 @@ automaticallyDisplayDeepLinkController:(BOOL)automaticallyDisplayController {
     LMPreferenceHelper *preferenceHelper =
         [LMPreferenceHelper preferenceHelper];
 
-    // If there was stored key and it isn't the same as the currently used (or
-    // doesn't exist), we need to clean up
-    // Note: Link Click Identifier is not cleared because of the potential for
-    // that to mess up a deep link
     if (preferenceHelper.lastRunLinkedMeKey &&
         ![key isEqualToString:preferenceHelper.lastRunLinkedMeKey]) {
       NSLog(@"[LKME Warning] The LKME Key has changed, clearing relevant "
@@ -1058,6 +995,7 @@ automaticallyDisplayDeepLinkController:(BOOL)automaticallyDisplayController {
               andFeature:(NSString *)feature
                 andStage:(NSString *)stage
                andParams:(NSDictionary *)params
+                andState:(BOOL)state
              andCallback:(callbackWithUrl)callback {
     
             [self initSessionIfNeededAndNotInProgress];
@@ -1070,6 +1008,7 @@ automaticallyDisplayDeepLinkController:(BOOL)automaticallyDisplayController {
                                         andFeature:feature
                                           andStage:stage
                                          andParams:params
+                                          andState:(BOOL)state
                                     ignoreUAString:nil];
 
   if ([self.linkCache objectForKey:linkData]) {
@@ -1103,6 +1042,7 @@ automaticallyDisplayDeepLinkController:(BOOL)automaticallyDisplayController {
                     andFeature:(NSString *)feature
                       andStage:(NSString *)stage
                      andParams:(NSDictionary *)params
+                      andState:(BOOL)state
                 ignoreUAString:(NSString *)ignoreUAString
              forceLinkCreation:(BOOL)forceLinkCreation {
   NSString *shortURL = nil;
@@ -1115,10 +1055,9 @@ automaticallyDisplayDeepLinkController:(BOOL)automaticallyDisplayController {
                                         andFeature:feature
                                           andStage:stage
                                          andParams:params
+                                         andState:(BOOL)state
                                     ignoreUAString:ignoreUAString];
 
-  // If an ignore UA string is present, we always get a new url. Otherwise, if
-  // we've already seen this request, use the cached version
   if (!ignoreUAString && [self.linkCache objectForKey:linkData]) {
     shortURL = [self.linkCache objectForKey:linkData];
   }
@@ -1195,18 +1134,20 @@ automaticallyDisplayDeepLinkController:(BOOL)automaticallyDisplayController {
                          andFeature:(NSString *)feature
                            andStage:(NSString *)stage
                           andParams:(NSDictionary *)params
+                          andState:(BOOL)state
                      ignoreUAString:(NSString *)ignoreUAString {
-  LMLinkData *post = [[LMLinkData alloc] init];
+    LMLinkData *post = [[LMLinkData alloc] init];
 
-  [post setupType:type];
-  [post setupTags:tags];
-  [post setupChannel:channel];
-  [post setupFeature:feature];
-  [post setupStage:stage];
-  [post setupAlias:alias];
-  [post setupMatchDuration:duration];
-  [post setupIgnoreUAString:ignoreUAString];
-  [post setupParams:params];
+    [post setupType:type];
+    [post setupTags:tags];
+    [post setupChannel:channel];
+    [post setupFeature:feature];
+    [post setupStage:stage];
+    [post setupState:state];
+    [post setupAlias:alias];
+    [post setupMatchDuration:duration];
+    [post setupIgnoreUAString:ignoreUAString];
+    [post setupParams:params];
 
   return post;
 }
@@ -1311,43 +1252,14 @@ automaticallyDisplayDeepLinkController:(BOOL)automaticallyDisplayController {
 - (void)processNextQueueItem {
     dispatch_semaphore_wait(self.processing_sema, DISPATCH_TIME_FOREVER);
     
+    //将网络计数为零，表示可以再次启动请求，队列大于0，
     if (self.networkCount == 0 && self.requestQueue.size > 0 && !self.preferenceHelper.shouldWaitForInit) {
+        // 将网络计数设置为1，表示不接受新的请求
         self.networkCount = 1;
         dispatch_semaphore_signal(self.processing_sema);
         
         LMServerRequest *req = [self.requestQueue peek];
-        
         if (req) {
-            LMServerCallback callback = ^(LMServerResponse *response, NSError *error) {
-                // If the request was successful, or was a bad user request, continue processing.
-                if (!error || error.code == LKMEBadRequestError || error.code == LKMEDuplicateResourceError) {
-                    [req processResponse:response error:error];
-                    
-                    [self.requestQueue dequeue];
-                    self.networkCount = 0;
-                    [self processNextQueueItem];
-                }
-                // On network problems, or LinkedME down, call the other callbacks and stop processing.
-                else {
-                    // First, gather all the requests to fail
-                    NSMutableArray *requestsToFail = [[NSMutableArray alloc] init];
-                    for (int i = 0; i < self.requestQueue.size; i++) {
-                        LMServerRequest *request = [self.requestQueue peekAt:i];
-                        if (request) {
-                            [requestsToFail addObject:request];
-                        }
-                    }
-                    
-                    // Then, set the network count to zero, indicating that requests can be started again
-                    self.networkCount = 0;
-                    
-                    // Finally, call all the requests callbacks with the error
-                    for (LMServerRequest *request in requestsToFail) {
-                        [request processResponse:nil error:error];
-                    }
-                }
-            };
-            
             if (![req isKindOfClass:[LMInstallRequest class]] && !self.preferenceHelper.identityID) {
                 NSLog(@"[LinkedME Error] User session has not been initialized!");
                 [req processResponse:nil error:[NSError errorWithDomain:LMErrorDomain code:LKMEInitError userInfo:@{ NSLocalizedDescriptionKey: @"LinkedME User Session has not been initialized" }]];
@@ -1359,11 +1271,74 @@ automaticallyDisplayDeepLinkController:(BOOL)automaticallyDisplayController {
                 return;
             }
             
-            [req makeRequest:self.bServerInterface key:self.linkedMeKey callback:callback];
+            dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+            dispatch_async(queue, ^ {
+                [req makeRequest:self.bServerInterface key:self.linkedMeKey callback:^(LMServerResponse *response, NSError *error) {
+                    [self processRequest:req response:response error:error];
+                }];
+            });
         }
     }
     else {
         dispatch_semaphore_signal(self.processing_sema);
+    }
+}
+
+- (void) processRequest:(LMServerRequest*)req
+               response:(LMServerResponse*)response
+                  error:(NSError*)error {
+
+    // 如果请求成功，或者是一个错误的用户请求，继续处理。
+    if (!error){
+
+        LMPerformBlockOnMainThreadSync(^{
+            [req processResponse:response error:error];
+        });
+
+        [self.requestQueue dequeue];
+        // 将网络计数设置为零，表示可以再次启动请求
+        self.networkCount = 0;
+        [self processNextQueueItem];
+    }
+    // 在网络出现问题时，调用其他回调并停止处理。
+    else {
+        NSLog(@"Network error: failing queued requests.");
+
+        // 收集所有失败的请求
+        NSMutableArray *requestsToFail = [[NSMutableArray alloc] init];
+        for (int i = 0; i < self.requestQueue.queueDepth; i++) {
+            LMServerRequest *request = [self.requestQueue peekAt:i];
+            if (request) {
+                [requestsToFail addObject:request];
+            }
+        }
+
+        // 接下来，删除所有多余请求。
+        // 调用回调函数，以防任何回调函数试图启动另一个请求
+        // 可能会启动另一个请求(并再次调用这些回调)
+        for (LMServerRequest *request in requestsToFail) {
+            [self.requestQueue remove:request];
+        }
+
+        // 将网络计数设置为零，表示可以再次启动请求
+        self.networkCount = 0;
+
+        // 调用所有带有错误的请求回调
+        for (LMServerRequest *request in requestsToFail) {
+            LMPerformBlockOnMainThreadSync(^ {
+                [request processResponse:nil error:error];
+            });
+        }
+    }
+}
+
+static inline void LMPerformBlockOnMainThreadSync(dispatch_block_t block) {
+    if (block) {
+        if ([NSThread isMainThread]) {
+            block();
+        } else {
+            dispatch_sync(dispatch_get_main_queue(), block);
+        }
     }
 }
 
@@ -1423,8 +1398,6 @@ automaticallyDisplayDeepLinkController:(BOOL)automaticallyDisplayController {
 //第一次安装或打开
 - (void)registerInstallOrOpen:(Class)clazz {
   callbackWithStatus initSessionCallback = ^(BOOL success, NSError *error) {
-      
-    
       
     if (error) {
       [self handleInitFailure:error];

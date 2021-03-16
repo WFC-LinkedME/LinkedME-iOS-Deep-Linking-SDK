@@ -12,7 +12,7 @@
 #import "LMConstants.h"
 #import "LMStrongMatchHelper.h"
 #import "LMDeviceInfo.h"
-#import "LMSimulateIDFA.h"
+#import "LMApplication.h"
 #import "LMEncodingUtils.h"
 #import "LKMEConfig.h"
 
@@ -30,33 +30,43 @@
     return [super initWithCallback:callback isInstall:YES];
 }
 
-- (void)makeRequest:(LMServerInterface *)serverInterface key:(NSString *)key callback:(LMServerCallback)callback {
-        
+- (void)makeRequest:(LMServerInterface *)serverInterface key:(NSString *)key callback:(LMServerCallback)callback {        LMPreferenceHelper *preferenceHelper = [LMPreferenceHelper preferenceHelper];
+
     self.maping = [[NSString alloc]init];
     
     @try {
-        UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
         
-        if ([pasteboard string].length>5) {
-            _cookid = [pasteboard string];
+        dispatch_queue_t queue = dispatch_queue_create("com.LinkPage.installQueue", DISPATCH_QUEUE_CONCURRENT);
+        
+        if (preferenceHelper.disableClipboardMatch == NO) {
+        dispatch_async(queue, ^{
+            
+           UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
+           
+            __weak typeof(self) weakSelf = self;
+
+           if ([pasteboard string].length>5) {
+               weakSelf.cookid = [pasteboard string];
+           }
+           
+             if (weakSelf.cookid.length >2) {
+                   NSString *checkString = weakSelf.cookid;
+                   NSString *pattern = @"`\\+(.+)`\\+";
+                   if (pattern) {
+                       NSRegularExpression *regular = [[NSRegularExpression alloc] initWithPattern:pattern options:NSRegularExpressionCaseInsensitive error:nil];
+                       if (regular) {
+                           NSTextCheckingResult *result = [regular firstMatchInString:checkString options:0 range:NSMakeRange(0, [checkString length])];
+                           if (result) {
+                               if ([result rangeAtIndex:1].length) {
+                                   self.maping = [checkString substringWithRange:[result rangeAtIndex:1]];
+                                   pasteboard.string = @"";
+                               }
+                           }
+                       }
+                   }
+               }
+            });
         }
-        
-          if (_cookid.length >2) {
-                NSString *checkString = _cookid;
-                NSString *pattern = @"`\\+(.+)`\\+";
-                if (pattern) {
-                    NSRegularExpression *regular = [[NSRegularExpression alloc] initWithPattern:pattern options:NSRegularExpressionCaseInsensitive error:nil];
-                    if (regular) {
-                        NSTextCheckingResult *result = [regular firstMatchInString:checkString options:0 range:NSMakeRange(0, [checkString length])];
-                        if (result) {
-                            if ([result rangeAtIndex:1].length) {
-                                self.maping = [checkString substringWithRange:[result rangeAtIndex:1]];
-                                pasteboard.string = @"";
-                            }
-                        }
-                    }
-                }
-            }
         
     } @catch (NSException *exception) {
         
@@ -64,7 +74,6 @@
         
     }
     
-    LMPreferenceHelper *preferenceHelper = [LMPreferenceHelper preferenceHelper];
     NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
 
     BOOL isRealHardwareId;
@@ -78,7 +87,7 @@
     
     [self safeSetValue:[LMSystemObserver getLinkedME] forKey:LINKEDME_REQUEST_KEY_DEVICE_BRAND onDict:params];
     
-    [self safeSetValue:[LMSimulateIDFA createSimulateIDFA] forKey:@"SimlateIDFA" onDict:params];
+//    [self safeSetValue:[LMSimulateIDFA createSimulateIDFA] forKey:@"SimlateIDFA" onDict:params];
     
     [self safeSetValue:[LMSystemObserver getModel] forKey:LINKEDME_REQUEST_KEY_DEVICE_MODEL onDict:params];
     [self safeSetValue:[LMSystemObserver getOS] forKey:LINKEDME_REQUEST_KEY_OS onDict:params];
@@ -108,6 +117,12 @@
     [self safeSetValue:[LMSystemObserver getIDFA] forKey:LINKEDME_REQUEST_KEY_OS_IDFA onDict:params];
     //idfv
     [self safeSetValue:[LMSystemObserver getIDFV] forKey:LINKEDME_REQUEST_KEY_OS_IDFV onDict:params];
+    
+    LMApplication *application = [LMApplication currentApplication];
+    params[@"lastest_update_time"] = LMWireFormatFromDate(application.currentBuildDate);
+    params[@"previous_update_time"] = LMWireFormatFromDate(preferenceHelper.previousAppBuildDate);
+    params[@"latest_install_time"] = LMWireFormatFromDate(application.currentInstallDate);
+    params[@"first_install_time"] = LMWireFormatFromDate(application.firstInstallDate);
     
     NSInteger delay = 750;
 //    NSEC_PER_SEC表示的是秒数，它还提供了NSEC_PER_MSEC表示毫秒。

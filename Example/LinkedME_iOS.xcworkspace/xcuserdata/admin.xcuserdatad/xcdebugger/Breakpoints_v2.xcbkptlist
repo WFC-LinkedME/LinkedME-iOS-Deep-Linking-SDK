@@ -28,7 +28,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1428"
             endingLineNumber = "1428"
-            landmarkName = "-registerInstallOrOpen:"
+            landmarkName = "-handleInitSuccess"
             landmarkType = "7">
             <Locations>
                <Location
@@ -79,7 +79,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1477"
             endingLineNumber = "1477"
-            landmarkName = "-handleInitSuccess"
+            landmarkName = "-handleInitFailure:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -94,10 +94,8 @@
             timestampString = "588753331.477893"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1538"
-            endingLineNumber = "1538"
-            landmarkName = "-handleInitFailure:"
-            landmarkType = "7">
+            startingLineNumber = "1489"
+            endingLineNumber = "1489">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -113,7 +111,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1394"
             endingLineNumber = "1394"
-            landmarkName = "-initUserSessionAndCallCallback:"
+            landmarkName = "-registerInstallOrOpen:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -128,10 +126,8 @@
             timestampString = "588753331.4786299"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1536"
-            endingLineNumber = "1536"
-            landmarkName = "-handleInitFailure:"
-            landmarkType = "7">
+            startingLineNumber = "1489"
+            endingLineNumber = "1489">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -162,8 +158,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1422"
             endingLineNumber = "1422"
-            landmarkName = "LinkedME"
-            landmarkType = "3">
+            landmarkName = "-handleInitSuccess"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -179,7 +175,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1388"
             endingLineNumber = "1388"
-            landmarkName = "-initUserSessionAndCallCallback:"
+            landmarkName = "-registerInstallOrOpen:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -196,8 +192,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1378"
             endingLineNumber = "1378"
-            landmarkName = "LinkedME"
-            landmarkType = "3">
+            landmarkName = "-registerInstallOrOpen:"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -230,8 +226,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1242"
             endingLineNumber = "1242"
-            landmarkName = "LinkedME"
-            landmarkType = "3">
+            landmarkName = "-insertRequestAtFront:"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -392,22 +388,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B7417574-6152-431A-94E2-C30BD0AFF00F"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../LinkedME_iOS/Classes/LMInstallRequest.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
-            landmarkName = "-makeRequest:key:callback:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "02D235A8-5C1E-467D-9E4C-6241DB7BB7CD"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -434,6 +414,150 @@
             startingLineNumber = "86"
             endingLineNumber = "86"
             landmarkName = "-genericHTTPRequest:retryNumber:log:callback:retryHandler:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6F11DDB7-6636-427A-880D-6A7A4DA6E8F0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LinkedME_iOS/Classes/Public/LMLinkProperties.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "+getLinkedMELinkPropertiesFromDictionary:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "02654198-561F-4CCB-9E83-2BD8669AF807"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LinkedME_iOS/Classes/Public/LMLinkProperties.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "+getLinkedMELinkPropertiesFromDictionary:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D2683C3D-8948-4229-8051-5DDE0C1E1D53"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LinkedME_iOS/Classes/Public/LMLinkProperties.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "+getLinkedMELinkPropertiesFromDictionary:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "45BFB0B2-14C4-4D3F-B40B-5344D593E135"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LinkedME_iOS/Classes/Public/LMLinkProperties.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "+getLinkedMELinkPropertiesFromDictionary:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0B4CE5F9-BBD6-4340-851C-1C98A8E0CE09"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LinkedME_iOS/Classes/Public/LMLinkProperties.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "+getLinkedMELinkPropertiesFromDictionary:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5B66B2F5-0408-4ADA-B86A-638663FB0A95"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LinkedME_iOS/Classes/Public/LMLinkProperties.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "+getLinkedMELinkPropertiesFromDictionary:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "609A14D5-FC50-49FA-9878-CC3DD0AA476A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LinkedME_iOS/Classes/Public/LMLinkProperties.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "-addControlParam:withValue:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5A61C493-FDF2-4261-A9B6-5C9CE012440F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LinkedME_iOS/Classes/Public/LinkedME.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1149"
+            endingLineNumber = "1149"
+            landmarkName = "-prepareLinkDataFor:andAlias:andType:andMatchDuration:andChannel:andFeature:andStage:andParams:andState:ignoreUAString:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "383D0A18-376B-4631-8E09-D307F26CEFDA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../LinkedME_iOS/Classes/Public/LMUniversalObject.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
+            landmarkName = "-getShortUrlWithLinkProperties:andCallback:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

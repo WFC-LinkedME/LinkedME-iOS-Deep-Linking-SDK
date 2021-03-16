@@ -13,7 +13,6 @@
 
 #ifdef KOnlineSecretKey
 
-//
 // 正式
 #define LKME_API_BASE_URL(HTTPS)   HTTPS?@"https://lkme.cc":@"http://lkme.cc"
 
@@ -33,7 +32,7 @@
 #define LKME_KEY(LIVE) LIVE?[NSBundle mainBundle].infoDictionary[@"linkedme_key"][@"live"]:\
 [NSBundle mainBundle].infoDictionary[@"linkedme_key"][@"live"]
 
-#define SDK_VERSION             @"1.5.4.5"
+#define SDK_VERSION             @"1.5.5.1"
 
 #define LKME_PROD_ENV
 
@@ -45,7 +44,6 @@
 
 #define LKME_API_BASE_URL            @"http://10.1.24.31:8080/"
 #endif
-
 
 #define LKME_LINK_URL               @"http://10.1.24.31:8080/"
 

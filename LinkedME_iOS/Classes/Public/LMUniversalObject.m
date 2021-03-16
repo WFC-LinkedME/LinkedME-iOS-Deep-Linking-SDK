@@ -87,6 +87,9 @@
     }
     
     [[LinkedME getInstance] getShortUrlWithParams:
+     
+//     [self getParamsForServerRequestWithAddedLinkProperties:linkProperties]
+     
      [self getParamsForServerRequestWithAddedLinkProperties:linkProperties]
                                             andTags:linkProperties.tags
                                            andAlias:linkProperties.alias
@@ -94,6 +97,7 @@
                                          andChannel:linkProperties.channel
                                          andFeature:linkProperties.feature
                                            andStage:linkProperties.stage
+                                           andState:linkProperties.state
                                         andCallback:nil];
 
     return @"";
@@ -129,6 +133,7 @@
                    andChannel:linkProperties.channel
                    andFeature:linkProperties.feature
                      andStage:linkProperties.stage
+                     andState:linkProperties.state
                    andCallback:callback];
 }
 

@@ -263,7 +263,9 @@ typedef NS_ENUM(NSUInteger, LMCreditHistoryOrder) {
  @warning 不适用于production!!
  */
 - (void)setDebug;
-
+//关闭剪切板匹配功能
+- (void)disableClipboardMatch;
+//获取safari缓存
 - (void)getSafariCookice:(BOOL)status;
 
 + (NSString *)getTestID;
@@ -390,7 +392,7 @@ typedef NS_ENUM(NSUInteger, LMCreditHistoryOrder) {
 /// @name 创建链接
 ///----------------------------------------
 
-- (void)getShortUrlWithParams:(NSDictionary *)params andTags:(NSArray *)tags andAlias:(NSString *)alias andMatchDuration:(NSUInteger)duration andChannel:(NSString *)channel andFeature:(NSString *)feature andStage:(NSString *)stage andCallback:(callbackWithUrl)callback;
+- (void)getShortUrlWithParams:(NSDictionary *)params andTags:(NSArray *)tags andAlias:(NSString *)alias andMatchDuration:(NSUInteger)duration andChannel:(NSString *)channel andFeature:(NSString *)feature andStage:(NSString *)stage andState:(BOOL)state andCallback:(callbackWithUrl)callback;
 
 
 - (void)getSpotlightUrlWithParams:(NSDictionary *)params callback:(callbackWithParams)callback;

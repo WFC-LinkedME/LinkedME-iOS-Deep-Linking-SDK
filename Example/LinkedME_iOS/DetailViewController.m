@@ -14,7 +14,7 @@
 
 
 //static NSString * const H5_TEST_URL = @"http://192.168.10.101:8888/h5/summary?linkedme=";
-static NSString * const H5_LIVE_URL = @"https://www.linkedme.cc/h5/summary?linkedme=";
+static NSString * const H5_LIVE_URL = @"https://guide.lkme.cc/h5/summary?linkedme=";
 static NSString * LINKEDME_SHORT_URL;
 
 @interface DetailViewController ()
@@ -94,14 +94,16 @@ static NSString * LINKEDME_SHORT_URL;
     self.linkedUniversalObject.title = title;//标题
     
     LMLinkProperties *linkProperties = [[LMLinkProperties alloc] init];
-    linkProperties.channel = @"";//渠道(微信,微博,QQ,等...)
+    linkProperties.channel = @"demo";//渠道(微信,微博,QQ,等...)
     linkProperties.feature = @"Share";//特点
-    linkProperties.tags=@[@"LinkedME",@"Demo"];//标签
+    linkProperties.tags=@[@"LinkedME",@"Demo1"];//标签
     linkProperties.stage = @"Live";//阶段
+    linkProperties.state = YES;
     [linkProperties addControlParam:@"ViewID" withValue:arr[_page][@"url"]];//页面唯一标识
-    [linkProperties addControlParam:@"LinkedME" withValue:@"Demo"];//Demo标识
+    [linkProperties addControlParam:@"testID" withValue:@"111"];//页面唯一标识
 
-
+    [linkProperties addControlParam:@"LinkedME" withValue:@"Demo1"];//Demo标识
+    
     //开始请求短链
     [self.linkedUniversalObject getShortUrlWithLinkProperties:linkProperties andCallback:^(NSString *url, NSError *err) {
         if (url) {
@@ -110,7 +112,7 @@ static NSString * LINKEDME_SHORT_URL;
             [self->H5_LIVE_URL stringByAppendingString:self->arr[self->_page][@"form"]];
             [self->H5_LIVE_URL stringByAppendingString:@"?linkedme="];
             
-            self->H5_LIVE_URL = [NSString stringWithFormat:@"https://www.linkedme.cc/h5/%@?linkedme=",self->arr[self->_page][@"form"]];
+            self->H5_LIVE_URL = [NSString stringWithFormat:@"https://guide.lkme.cc/h5/%@?linkedme=",self->arr[self->_page][@"form"]];
             //前面是Html5页面,后面拼上深度链接https://xxxxx.xxx (html5 页面地址) ?linkedme=(深度链接)
             //https://www.linkedme.cc/h5/feature?linkedme=https://lkme.cc/AfC/mj9H87tk7
             LINKEDME_SHORT_URL = [self->H5_LIVE_URL stringByAppendingString:url];

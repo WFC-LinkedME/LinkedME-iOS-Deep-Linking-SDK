@@ -208,7 +208,6 @@
     [request setValue:postLength forHTTPHeaderField:@"Content-Length"];
 //    [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
     [request setHTTPBody:[para dataUsingEncoding:NSUTF8StringEncoding]];
-    
     return request;
 }
 
@@ -226,7 +225,7 @@
     NSString * prepareData = [array componentsJoinedByString:@"&"];
     NSString * prepareDataFinished = [prepareData stringByAppendingString:[self getCurrentTime]];
     fullParamDict[@"sign"]= [LMEncodingUtils md5Encode:prepareDataFinished];
-    
+
     return fullParamDict;
 }
 

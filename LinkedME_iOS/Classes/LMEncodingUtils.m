@@ -19,6 +19,44 @@ NSString *const lmkInitVector = @"16-Bytes--String";
 size_t const lmkKeySize = kCCKeySizeAES128;
 
 
+NSDate* LMDateFromWireFormat(id object) {
+    NSDate *date = nil;
+    if ([object respondsToSelector:@selector(doubleValue)]) {
+        NSTimeInterval t = [object doubleValue];
+        date = [NSDate dateWithTimeIntervalSince1970:t/1000.0];
+    }
+    return date;
+}
+
+NSNumber* LMWireFormatFromDate(NSDate *date) {
+    NSNumber *number = nil;
+    NSTimeInterval t = [date timeIntervalSince1970];
+    if (date && t != 0.0 ) {
+        number = [NSNumber numberWithLongLong:(long long)(t*1000.0)];
+    }
+    return number;
+}
+
+NSNumber* LMWireFormatFromBool(BOOL b) {
+    return (b) ? (__bridge NSNumber*) kCFBooleanTrue : nil;
+}
+
+NSString* LMStringFromWireFormat(id object) {
+    if ([object isKindOfClass:NSString.class])
+        return object;
+    else
+    if ([object respondsToSelector:@selector(stringValue)])
+        return [object stringValue];
+    else
+    if ([object respondsToSelector:@selector(description)])
+        return [object description];
+    return nil;
+}
+
+NSString* LMWireFormatFromString(NSString *string) {
+    return string;
+}
+
 #pragma mark - Base 64 encoding
 
 // BASE 64 encoding brought to you by http://ios-dev-blog.com/base64-encodingdecoding/

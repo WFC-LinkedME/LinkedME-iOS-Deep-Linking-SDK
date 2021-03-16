@@ -30,6 +30,7 @@ NSUInteger const DEVICE_ID_TYPE_IDFV=24;
     NSString *uid = nil;
     *isReal = YES;
     
+    
     Class ASIdentifierManagerClass = NSClassFromString(@"ASIdentifierManager");
     if (ASIdentifierManagerClass && !debug) {
         SEL sharedManagerSelector = NSSelectorFromString(@"sharedManager");
@@ -91,7 +92,6 @@ NSUInteger const DEVICE_ID_TYPE_IDFV=24;
 + (NSString *)getIDFA {
     NSString *idfa = nil;
     Class ASIdentifierManagerClass = NSClassFromString(@"ASIdentifierManager");
-    
     if (ASIdentifierManagerClass) {
         SEL sharedManagerSelector = NSSelectorFromString(@"sharedManager");
         id sharedManager = ((id (*)(id, SEL))[ASIdentifierManagerClass methodForSelector:sharedManagerSelector])(ASIdentifierManagerClass, sharedManagerSelector);
@@ -294,11 +294,10 @@ NSUInteger const DEVICE_ID_TYPE_IDFV=24;
 
 + (NSString*)identifierByKeychain{
     //该类方法没有线程保护，所以可能因异步而导致创建出不同的设备唯一ID，故而增加此线程锁！
-    @synchronized ([NSNotificationCenter defaultCenter])
-    {
+    @synchronized ([NSNotificationCenter defaultCenter]){
         NSString* service = @"CreateDeviceIdentifierByKeychain";
         NSString* account = @"VirtualDeviceIdentifier";
-        //获取iOS系统推荐的设备唯一ID
+        //获取IDFV
         NSString* recommendDeviceIdentifier = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
         recommendDeviceIdentifier = [recommendDeviceIdentifier stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
         NSMutableDictionary* queryDic = [NSMutableDictionary dictionary];
@@ -311,15 +310,11 @@ NSUInteger const DEVICE_ID_TYPE_IDFV=24;
         CFTypeRef keychainPassword = NULL;
         //首先查询钥匙串是否存在对应的值，如果存在则直接返回钥匙串中的值
         OSStatus queryResult = SecItemCopyMatching((__bridge CFDictionaryRef)queryDic, &keychainPassword);
-        if (queryResult == errSecSuccess)
-        {
+        if (queryResult == errSecSuccess){
             NSString *pwd = [[NSString alloc] initWithData:(__bridge NSData * _Nonnull)(keychainPassword) encoding:NSUTF8StringEncoding];
-            if ([pwd isKindOfClass:[NSString class]] && pwd.length > 0)
-            {
+            if ([pwd isKindOfClass:[NSString class]] && pwd.length > 0){
                 return pwd;
-            }
-            else
-            {
+            }else{
                 //如果钥匙串中的相关数据不合法，则删除对应的数据重新创建
                 NSMutableDictionary* deleteDic = [NSMutableDictionary dictionary];
                 [deleteDic setObject:(__bridge id)kSecClassGenericPassword forKey:(__bridge id)kSecClass];
@@ -327,14 +322,11 @@ NSUInteger const DEVICE_ID_TYPE_IDFV=24;
                 [deleteDic setObject:(__bridge id)kCFBooleanFalse forKey:(__bridge id)kSecAttrSynchronizable];
                 [deleteDic setObject:account forKey:(__bridge id)kSecAttrAccount];
                 OSStatus status = SecItemDelete((__bridge CFDictionaryRef)deleteDic);
-                if (status != errSecSuccess)
-                {
+                if (status != errSecSuccess){
                     return recommendDeviceIdentifier;
                 }
             }
-        }
-        if (recommendDeviceIdentifier.length > 0)
-        {
+        }if (recommendDeviceIdentifier.length > 0){
             //创建数据到钥匙串，达到APP即使被删除也不会变更的设备唯一ID，除非系统抹除数据，否则该数据将存储在钥匙串中
             NSMutableDictionary* createDic = [NSMutableDictionary dictionary];
             [createDic setObject:(__bridge id)kSecClassGenericPassword forKey:(__bridge id)kSecClass];
@@ -352,4 +344,5 @@ NSUInteger const DEVICE_ID_TYPE_IDFV=24;
         return recommendDeviceIdentifier;
     }
 }
+
 @end

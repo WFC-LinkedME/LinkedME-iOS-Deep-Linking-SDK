@@ -14,4 +14,6 @@
 @property (strong,nonatomic)NSString * deviceId;
 @property (assign,nonatomic)NSUInteger deviceType;
 
++ (NSString *)getModel;
+
 @end

@@ -13,7 +13,7 @@
 #import "LMDeviceInfo.h"
 #import "LMSystemObserver.h"
 #import "LMConstants.h"
-#import "LMSimulateIDFA.h"
+//#import "LMSimulateIDFA.h"
 #import "LMServerInterface.h"
 #import "LMEncodingUtils.h"
 

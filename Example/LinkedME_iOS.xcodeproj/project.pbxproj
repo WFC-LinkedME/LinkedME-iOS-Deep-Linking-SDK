@@ -12,6 +12,38 @@
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
+		673442BF25FF35660053EF3A /* LMDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6734427E25FF35660053EF3A /* LMDeviceInfo.m */; };
+		673442C025FF35660053EF3A /* LMLoadRewardsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6734428125FF35660053EF3A /* LMLoadRewardsRequest.m */; };
+		673442C125FF35660053EF3A /* LMConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 6734428225FF35660053EF3A /* LMConstants.m */; };
+		673442C225FF35660053EF3A /* LMOpenRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6734428425FF35660053EF3A /* LMOpenRequest.m */; };
+		673442C325FF35660053EF3A /* LMLogoutRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6734428525FF35660053EF3A /* LMLogoutRequest.m */; };
+		673442C425FF35660053EF3A /* LMKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 6734428625FF35660053EF3A /* LMKeychain.m */; };
+		673442C525FF35660053EF3A /* LMSystemObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 6734428725FF35660053EF3A /* LMSystemObserver.m */; };
+		673442C625FF35660053EF3A /* LMBaseEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6734428925FF35660053EF3A /* LMBaseEntity.m */; };
+		673442C725FF35660053EF3A /* LMSetIdentityRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6734428A25FF35660053EF3A /* LMSetIdentityRequest.m */; };
+		673442C825FF35660053EF3A /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 6734428B25FF35660053EF3A /* .gitkeep */; };
+		673442C925FF35660053EF3A /* LMStrongMatchHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6734428E25FF35660053EF3A /* LMStrongMatchHelper.m */; };
+		673442CA25FF35660053EF3A /* LMAppConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = 6734428F25FF35660053EF3A /* LMAppConnect.m */; };
+		673442CB25FF35660053EF3A /* LMError.m in Sources */ = {isa = PBXBuildFile; fileRef = 6734429025FF35660053EF3A /* LMError.m */; };
+		673442CC25FF35660053EF3A /* LMCloseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6734429125FF35660053EF3A /* LMCloseRequest.m */; };
+		673442CD25FF35660053EF3A /* LMShortUrlRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6734429425FF35660053EF3A /* LMShortUrlRequest.m */; };
+		673442CE25FF35660053EF3A /* LMEncodingUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6734429525FF35660053EF3A /* LMEncodingUtils.m */; };
+		673442CF25FF35660053EF3A /* LMServerInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 6734429725FF35660053EF3A /* LMServerInterface.m */; };
+		673442D025FF35660053EF3A /* LMLinkData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6734429925FF35660053EF3A /* LMLinkData.m */; };
+		673442D125FF35660053EF3A /* LMLinkProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 6734429C25FF35660053EF3A /* LMLinkProperties.m */; };
+		673442D225FF35660053EF3A /* LMApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 6734429F25FF35660053EF3A /* LMApplication.m */; };
+		673442D325FF35660053EF3A /* LMUniversalObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 673442A125FF35660053EF3A /* LMUniversalObject.m */; };
+		673442D425FF35660053EF3A /* LMServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 673442A325FF35660053EF3A /* LMServerRequest.m */; };
+		673442D525FF35660053EF3A /* LMServerRequestQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 673442A425FF35660053EF3A /* LMServerRequestQueue.m */; };
+		673442D625FF35660053EF3A /* LMServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 673442A625FF35660053EF3A /* LMServerResponse.m */; };
+		673442D725FF35660053EF3A /* LMLinkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 673442A725FF35660053EF3A /* LMLinkCache.m */; };
+		673442D825FF35660053EF3A /* LinkedME.m in Sources */ = {isa = PBXBuildFile; fileRef = 673442A925FF35660053EF3A /* LinkedME.m */; };
+		673442D925FF35660053EF3A /* LMPreferenceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 673442AA25FF35660053EF3A /* LMPreferenceHelper.m */; };
+		673442DA25FF35660053EF3A /* LMRegisterViewRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 673442AF25FF35660053EF3A /* LMRegisterViewRequest.m */; };
+		673442DB25FF35660053EF3A /* LMContentDiscoveryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 673442B025FF35660053EF3A /* LMContentDiscoveryManager.m */; };
+		673442DC25FF35660053EF3A /* LMTrackingConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 673442B425FF35660053EF3A /* LMTrackingConstants.m */; };
+		673442DD25FF35660053EF3A /* LMInstallRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 673442B725FF35660053EF3A /* LMInstallRequest.m */; };
+		673442DE25FF35660053EF3A /* LMSpotlightUrlRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 673442BE25FF35660053EF3A /* LMSpotlightUrlRequest.m */; };
 		7608436F64376C3919395C71 /* libPods-LinkedME_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CBE6776E8A1B524E6B3F5D /* libPods-LinkedME_iOS.a */; };
 		8405AA671E4AB61400622F22 /* CoreSpotlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E478BD1D3E2897009B1392 /* CoreSpotlight.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		840F490E1E8F95F600D88493 /* AppDelegate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 840F490D1E8F95F600D88493 /* AppDelegate+Extension.m */; };
@@ -44,7 +76,74 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		6734427C25FF35660053EF3A /* LMContentDiscoveryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMContentDiscoveryManager.h; sourceTree = "<group>"; };
+		6734427D25FF35660053EF3A /* LMRegisterViewRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMRegisterViewRequest.h; sourceTree = "<group>"; };
+		6734427E25FF35660053EF3A /* LMDeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMDeviceInfo.m; sourceTree = "<group>"; };
+		6734427F25FF35660053EF3A /* LMEncodingUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMEncodingUtils.h; sourceTree = "<group>"; };
+		6734428025FF35660053EF3A /* LMShortUrlRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMShortUrlRequest.h; sourceTree = "<group>"; };
+		6734428125FF35660053EF3A /* LMLoadRewardsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMLoadRewardsRequest.m; sourceTree = "<group>"; };
+		6734428225FF35660053EF3A /* LMConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMConstants.m; sourceTree = "<group>"; };
+		6734428325FF35660053EF3A /* LKMEConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKMEConfig.h; sourceTree = "<group>"; };
+		6734428425FF35660053EF3A /* LMOpenRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMOpenRequest.m; sourceTree = "<group>"; };
+		6734428525FF35660053EF3A /* LMLogoutRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMLogoutRequest.m; sourceTree = "<group>"; };
+		6734428625FF35660053EF3A /* LMKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMKeychain.m; sourceTree = "<group>"; };
+		6734428725FF35660053EF3A /* LMSystemObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMSystemObserver.m; sourceTree = "<group>"; };
+		6734428825FF35660053EF3A /* LMInstallRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMInstallRequest.h; sourceTree = "<group>"; };
+		6734428925FF35660053EF3A /* LMBaseEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMBaseEntity.m; sourceTree = "<group>"; };
+		6734428A25FF35660053EF3A /* LMSetIdentityRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMSetIdentityRequest.m; sourceTree = "<group>"; };
+		6734428B25FF35660053EF3A /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		6734428C25FF35660053EF3A /* LMTrackingConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMTrackingConstants.h; sourceTree = "<group>"; };
+		6734428D25FF35660053EF3A /* LMSpotlightUrlRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMSpotlightUrlRequest.h; sourceTree = "<group>"; };
+		6734428E25FF35660053EF3A /* LMStrongMatchHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMStrongMatchHelper.m; sourceTree = "<group>"; };
+		6734428F25FF35660053EF3A /* LMAppConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMAppConnect.m; sourceTree = "<group>"; };
+		6734429025FF35660053EF3A /* LMError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMError.m; sourceTree = "<group>"; };
+		6734429125FF35660053EF3A /* LMCloseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMCloseRequest.m; sourceTree = "<group>"; };
+		6734429225FF35660053EF3A /* LMConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMConstants.h; sourceTree = "<group>"; };
+		6734429325FF35660053EF3A /* LMLoadRewardsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMLoadRewardsRequest.h; sourceTree = "<group>"; };
+		6734429425FF35660053EF3A /* LMShortUrlRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMShortUrlRequest.m; sourceTree = "<group>"; };
+		6734429525FF35660053EF3A /* LMEncodingUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMEncodingUtils.m; sourceTree = "<group>"; };
+		6734429725FF35660053EF3A /* LMServerInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMServerInterface.m; sourceTree = "<group>"; };
+		6734429825FF35660053EF3A /* LMServerResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMServerResponse.h; sourceTree = "<group>"; };
+		6734429925FF35660053EF3A /* LMLinkData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMLinkData.m; sourceTree = "<group>"; };
+		6734429A25FF35660053EF3A /* LMServerRequestQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMServerRequestQueue.h; sourceTree = "<group>"; };
+		6734429B25FF35660053EF3A /* LMServerRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMServerRequest.h; sourceTree = "<group>"; };
+		6734429C25FF35660053EF3A /* LMLinkProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMLinkProperties.m; sourceTree = "<group>"; };
+		6734429D25FF35660053EF3A /* LMPreferenceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMPreferenceHelper.h; sourceTree = "<group>"; };
+		6734429E25FF35660053EF3A /* LinkedME.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedME.h; sourceTree = "<group>"; };
+		6734429F25FF35660053EF3A /* LMApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMApplication.m; sourceTree = "<group>"; };
+		673442A025FF35660053EF3A /* LMLinkCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMLinkCache.h; sourceTree = "<group>"; };
+		673442A125FF35660053EF3A /* LMUniversalObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMUniversalObject.m; sourceTree = "<group>"; };
+		673442A225FF35660053EF3A /* LMServerInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMServerInterface.h; sourceTree = "<group>"; };
+		673442A325FF35660053EF3A /* LMServerRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMServerRequest.m; sourceTree = "<group>"; };
+		673442A425FF35660053EF3A /* LMServerRequestQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMServerRequestQueue.m; sourceTree = "<group>"; };
+		673442A525FF35660053EF3A /* LMLinkData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMLinkData.h; sourceTree = "<group>"; };
+		673442A625FF35660053EF3A /* LMServerResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMServerResponse.m; sourceTree = "<group>"; };
+		673442A725FF35660053EF3A /* LMLinkCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMLinkCache.m; sourceTree = "<group>"; };
+		673442A825FF35660053EF3A /* LMApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMApplication.h; sourceTree = "<group>"; };
+		673442A925FF35660053EF3A /* LinkedME.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedME.m; sourceTree = "<group>"; };
+		673442AA25FF35660053EF3A /* LMPreferenceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMPreferenceHelper.m; sourceTree = "<group>"; };
+		673442AB25FF35660053EF3A /* LMLinkProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMLinkProperties.h; sourceTree = "<group>"; };
+		673442AC25FF35660053EF3A /* LMDeepLinkingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMDeepLinkingController.h; sourceTree = "<group>"; };
+		673442AD25FF35660053EF3A /* LMUniversalObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMUniversalObject.h; sourceTree = "<group>"; };
+		673442AE25FF35660053EF3A /* LMDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMDeviceInfo.h; sourceTree = "<group>"; };
+		673442AF25FF35660053EF3A /* LMRegisterViewRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMRegisterViewRequest.m; sourceTree = "<group>"; };
+		673442B025FF35660053EF3A /* LMContentDiscoveryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMContentDiscoveryManager.m; sourceTree = "<group>"; };
+		673442B125FF35660053EF3A /* LMKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMKeychain.h; sourceTree = "<group>"; };
+		673442B225FF35660053EF3A /* LMLogoutRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMLogoutRequest.h; sourceTree = "<group>"; };
+		673442B325FF35660053EF3A /* LMOpenRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMOpenRequest.h; sourceTree = "<group>"; };
+		673442B425FF35660053EF3A /* LMTrackingConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMTrackingConstants.m; sourceTree = "<group>"; };
+		673442B525FF35660053EF3A /* LMSetIdentityRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMSetIdentityRequest.h; sourceTree = "<group>"; };
+		673442B625FF35660053EF3A /* LMBaseEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMBaseEntity.h; sourceTree = "<group>"; };
+		673442B725FF35660053EF3A /* LMInstallRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMInstallRequest.m; sourceTree = "<group>"; };
+		673442B825FF35660053EF3A /* LMSystemObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMSystemObserver.h; sourceTree = "<group>"; };
+		673442B925FF35660053EF3A /* LMCloseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMCloseRequest.h; sourceTree = "<group>"; };
+		673442BA25FF35660053EF3A /* LM-SDK-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LM-SDK-Prefix.pch"; sourceTree = "<group>"; };
+		673442BB25FF35660053EF3A /* LMAppConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMAppConnect.h; sourceTree = "<group>"; };
+		673442BC25FF35660053EF3A /* LMError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMError.h; sourceTree = "<group>"; };
+		673442BD25FF35660053EF3A /* LMStrongMatchHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMStrongMatchHelper.h; sourceTree = "<group>"; };
+		673442BE25FF35660053EF3A /* LMSpotlightUrlRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMSpotlightUrlRequest.m; sourceTree = "<group>"; };
 		781F8D11253ED2DBC64B9DF0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		8400498223B5C6C300E0479E /* LinkedME_iOSRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = LinkedME_iOSRelease.entitlements; path = LinkedME_iOS/LinkedME_iOSRelease.entitlements; sourceTree = "<group>"; };
 		840F490C1E8F95F600D88493 /* AppDelegate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Extension.h"; sourceTree = "<group>"; };
 		840F490D1E8F95F600D88493 /* AppDelegate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Extension.m"; sourceTree = "<group>"; };
 		8458C7C91E6819810005F71A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -114,6 +213,7 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				8400498223B5C6C300E0479E /* LinkedME_iOSRelease.entitlements */,
 				848A1DE323951C5500181678 /* LinkedME_iOS.entitlements */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for LinkedME_iOS */,
@@ -157,6 +257,7 @@
 		6003F593195388D20070C39A /* Example for LinkedME_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				6734427B25FF35660053EF3A /* Classes */,
 				87B825AA1D07BA2F0099CAA5 /* Main.storyboard */,
 				87B8259C1D07BA270099CAA5 /* AppDelegate.h */,
 				87B8259D1D07BA270099CAA5 /* AppDelegate.m */,
@@ -217,6 +318,88 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		6734427B25FF35660053EF3A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6734427C25FF35660053EF3A /* LMContentDiscoveryManager.h */,
+				6734427D25FF35660053EF3A /* LMRegisterViewRequest.h */,
+				6734427E25FF35660053EF3A /* LMDeviceInfo.m */,
+				6734427F25FF35660053EF3A /* LMEncodingUtils.h */,
+				6734428025FF35660053EF3A /* LMShortUrlRequest.h */,
+				6734428125FF35660053EF3A /* LMLoadRewardsRequest.m */,
+				6734428225FF35660053EF3A /* LMConstants.m */,
+				6734428325FF35660053EF3A /* LKMEConfig.h */,
+				6734428425FF35660053EF3A /* LMOpenRequest.m */,
+				6734428525FF35660053EF3A /* LMLogoutRequest.m */,
+				6734428625FF35660053EF3A /* LMKeychain.m */,
+				6734428725FF35660053EF3A /* LMSystemObserver.m */,
+				6734428825FF35660053EF3A /* LMInstallRequest.h */,
+				6734428925FF35660053EF3A /* LMBaseEntity.m */,
+				6734428A25FF35660053EF3A /* LMSetIdentityRequest.m */,
+				6734428B25FF35660053EF3A /* .gitkeep */,
+				6734428C25FF35660053EF3A /* LMTrackingConstants.h */,
+				6734428D25FF35660053EF3A /* LMSpotlightUrlRequest.h */,
+				6734428E25FF35660053EF3A /* LMStrongMatchHelper.m */,
+				6734428F25FF35660053EF3A /* LMAppConnect.m */,
+				6734429025FF35660053EF3A /* LMError.m */,
+				6734429125FF35660053EF3A /* LMCloseRequest.m */,
+				6734429225FF35660053EF3A /* LMConstants.h */,
+				6734429325FF35660053EF3A /* LMLoadRewardsRequest.h */,
+				6734429425FF35660053EF3A /* LMShortUrlRequest.m */,
+				6734429525FF35660053EF3A /* LMEncodingUtils.m */,
+				6734429625FF35660053EF3A /* Public */,
+				673442AE25FF35660053EF3A /* LMDeviceInfo.h */,
+				673442AF25FF35660053EF3A /* LMRegisterViewRequest.m */,
+				673442B025FF35660053EF3A /* LMContentDiscoveryManager.m */,
+				673442B125FF35660053EF3A /* LMKeychain.h */,
+				673442B225FF35660053EF3A /* LMLogoutRequest.h */,
+				673442B325FF35660053EF3A /* LMOpenRequest.h */,
+				673442B425FF35660053EF3A /* LMTrackingConstants.m */,
+				673442B525FF35660053EF3A /* LMSetIdentityRequest.h */,
+				673442B625FF35660053EF3A /* LMBaseEntity.h */,
+				673442B725FF35660053EF3A /* LMInstallRequest.m */,
+				673442B825FF35660053EF3A /* LMSystemObserver.h */,
+				673442B925FF35660053EF3A /* LMCloseRequest.h */,
+				673442BA25FF35660053EF3A /* LM-SDK-Prefix.pch */,
+				673442BB25FF35660053EF3A /* LMAppConnect.h */,
+				673442BC25FF35660053EF3A /* LMError.h */,
+				673442BD25FF35660053EF3A /* LMStrongMatchHelper.h */,
+				673442BE25FF35660053EF3A /* LMSpotlightUrlRequest.m */,
+			);
+			name = Classes;
+			path = ../../LinkedME_iOS/Classes;
+			sourceTree = "<group>";
+		};
+		6734429625FF35660053EF3A /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				6734429725FF35660053EF3A /* LMServerInterface.m */,
+				6734429825FF35660053EF3A /* LMServerResponse.h */,
+				6734429925FF35660053EF3A /* LMLinkData.m */,
+				6734429A25FF35660053EF3A /* LMServerRequestQueue.h */,
+				6734429B25FF35660053EF3A /* LMServerRequest.h */,
+				6734429C25FF35660053EF3A /* LMLinkProperties.m */,
+				6734429D25FF35660053EF3A /* LMPreferenceHelper.h */,
+				6734429E25FF35660053EF3A /* LinkedME.h */,
+				6734429F25FF35660053EF3A /* LMApplication.m */,
+				673442A025FF35660053EF3A /* LMLinkCache.h */,
+				673442A125FF35660053EF3A /* LMUniversalObject.m */,
+				673442A225FF35660053EF3A /* LMServerInterface.h */,
+				673442A325FF35660053EF3A /* LMServerRequest.m */,
+				673442A425FF35660053EF3A /* LMServerRequestQueue.m */,
+				673442A525FF35660053EF3A /* LMLinkData.h */,
+				673442A625FF35660053EF3A /* LMServerResponse.m */,
+				673442A725FF35660053EF3A /* LMLinkCache.m */,
+				673442A825FF35660053EF3A /* LMApplication.h */,
+				673442A925FF35660053EF3A /* LinkedME.m */,
+				673442AA25FF35660053EF3A /* LMPreferenceHelper.m */,
+				673442AB25FF35660053EF3A /* LMLinkProperties.h */,
+				673442AC25FF35660053EF3A /* LMDeepLinkingController.h */,
+				673442AD25FF35660053EF3A /* LMUniversalObject.h */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
 		878A2BFA1D0152E900CC11DC /* Lib */ = {
 			isa = PBXGroup;
 			children = (
@@ -256,7 +439,7 @@
 				ORGANIZATIONNAME = Bindx;
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
-						DevelopmentTeam = UEVC2E3PR8;
+						DevelopmentTeam = R7AT7D6CFS;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -297,6 +480,7 @@
 			files = (
 				87B825A61D07BA270099CAA5 /* DefaultData.plist in Resources */,
 				87B825AB1D07BA2F0099CAA5 /* Main.storyboard in Resources */,
+				673442C825FF35660053EF3A /* .gitkeep in Resources */,
 				878A2C691D01594600CC11DC /* Assets.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -330,12 +514,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				673442C325FF35660053EF3A /* LMLogoutRequest.m in Sources */,
+				673442DC25FF35660053EF3A /* LMTrackingConstants.m in Sources */,
+				673442D425FF35660053EF3A /* LMServerRequest.m in Sources */,
+				673442C125FF35660053EF3A /* LMConstants.m in Sources */,
+				673442D525FF35660053EF3A /* LMServerRequestQueue.m in Sources */,
+				673442C725FF35660053EF3A /* LMSetIdentityRequest.m in Sources */,
+				673442C925FF35660053EF3A /* LMStrongMatchHelper.m in Sources */,
+				673442DE25FF35660053EF3A /* LMSpotlightUrlRequest.m in Sources */,
+				673442C525FF35660053EF3A /* LMSystemObserver.m in Sources */,
+				673442D925FF35660053EF3A /* LMPreferenceHelper.m in Sources */,
 				87B825A71D07BA270099CAA5 /* DemoViewController.m in Sources */,
+				673442D825FF35660053EF3A /* LinkedME.m in Sources */,
+				673442CC25FF35660053EF3A /* LMCloseRequest.m in Sources */,
+				673442CD25FF35660053EF3A /* LMShortUrlRequest.m in Sources */,
+				673442C225FF35660053EF3A /* LMOpenRequest.m in Sources */,
+				673442DA25FF35660053EF3A /* LMRegisterViewRequest.m in Sources */,
+				673442D325FF35660053EF3A /* LMUniversalObject.m in Sources */,
+				673442D125FF35660053EF3A /* LMLinkProperties.m in Sources */,
+				673442CE25FF35660053EF3A /* LMEncodingUtils.m in Sources */,
+				673442CB25FF35660053EF3A /* LMError.m in Sources */,
+				673442C425FF35660053EF3A /* LMKeychain.m in Sources */,
 				87B825A51D07BA270099CAA5 /* AppDelegate.m in Sources */,
+				673442BF25FF35660053EF3A /* LMDeviceInfo.m in Sources */,
+				673442DB25FF35660053EF3A /* LMContentDiscoveryManager.m in Sources */,
+				673442C025FF35660053EF3A /* LMLoadRewardsRequest.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				673442C625FF35660053EF3A /* LMBaseEntity.m in Sources */,
 				87B825A81D07BA270099CAA5 /* DetailViewController.m in Sources */,
+				673442CA25FF35660053EF3A /* LMAppConnect.m in Sources */,
 				87B825A91D07BA270099CAA5 /* ViewController.m in Sources */,
+				673442D025FF35660053EF3A /* LMLinkData.m in Sources */,
+				673442DD25FF35660053EF3A /* LMInstallRequest.m in Sources */,
 				840F490E1E8F95F600D88493 /* AppDelegate+Extension.m in Sources */,
+				673442CF25FF35660053EF3A /* LMServerInterface.m in Sources */,
+				673442D725FF35660053EF3A /* LMLinkCache.m in Sources */,
+				673442D625FF35660053EF3A /* LMServerResponse.m in Sources */,
+				673442D225FF35660053EF3A /* LMApplication.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,7 +690,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = UEVC2E3PR8;
+				DEVELOPMENT_TEAM = R7AT7D6CFS;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LinkedME_iOS/umeng/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
@@ -494,7 +709,7 @@
 				LINKER_DISPLAYS_MANGLED_NAMES = NO;
 				MODULE_NAME = ExampleApp;
 				NEW_SETTING = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.microquation.LinkedME;
+				PRODUCT_BUNDLE_IDENTIFIER = com.microquation.LinkedME222;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -506,11 +721,11 @@
 			baseConfigurationReference = 5F8582930A6D81854CB55DB3 /* Pods-LinkedME_iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = LinkedME_iOS/LinkedME_iOS.entitlements;
+				CODE_SIGN_ENTITLEMENTS = LinkedME_iOS/LinkedME_iOSRelease.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = UEVC2E3PR8;
+				DEVELOPMENT_TEAM = R7AT7D6CFS;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LinkedME_iOS/umeng/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
@@ -529,7 +744,7 @@
 				LINKER_DISPLAYS_MANGLED_NAMES = NO;
 				MODULE_NAME = ExampleApp;
 				NEW_SETTING = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.microquation.LinkedME;
+				PRODUCT_BUNDLE_IDENTIFIER = com.microquation.LinkedME222;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;

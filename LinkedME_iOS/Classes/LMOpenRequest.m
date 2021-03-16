@@ -13,7 +13,7 @@
 #import "LMConstants.h"
 #import "LMEncodingUtils.h"
 #import "LMDeviceInfo.h"
-#import "LMSimulateIDFA.h"
+//#import "LMSimulateIDFA.h"
 #import "LKMEConfig.h"
 
 #define IOS8 ([[[UIDevice currentDevice] systemVersion] doubleValue] >=8.0 ? YES : NO)
@@ -33,7 +33,6 @@
 }
 
 - (id)initWithCallback:(callbackWithStatus)callback isInstall:(BOOL)isInstall {
-    
     if (self = [super init]) {
         _callback = callback;
         _isInstall = isInstall;
@@ -45,29 +44,42 @@
     
     self.maping = [[NSString alloc]init];
     
+    LMPreferenceHelper *preferenceHelper = [LMPreferenceHelper preferenceHelper];
+    
     @try {
-        UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
+        dispatch_queue_t queue = dispatch_queue_create("com.LinkPage.openQueue", DISPATCH_QUEUE_CONCURRENT);
         
-        if ([pasteboard string].length>5) {
-            _cookid = [pasteboard string];
-        }
-        
-        if (_cookid.length >2) {
-            NSString *checkString = _cookid;
-            NSString *pattern = @"`\\+(.+)`\\+";
-            if (pattern) {
-                NSRegularExpression *regular = [[NSRegularExpression alloc] initWithPattern:pattern options:NSRegularExpressionCaseInsensitive error:nil];
-                if (regular) {
-                    NSTextCheckingResult *result = [regular firstMatchInString:checkString options:0 range:NSMakeRange(0, [checkString length])];
-                    if (result) {
-                        if ([result rangeAtIndex:1].length) {
-                            self.maping = [checkString substringWithRange:[result rangeAtIndex:1]];
-                            pasteboard.string = @"";
-                        }
-                    }
+        dispatch_async(queue, ^{
+            
+            if (preferenceHelper.disableClipboardMatch == NO) {
+                // 追加任务 1
+                   __weak typeof(self) weakSelf = self;
+
+                   UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
+                          
+                  if ([pasteboard string].length>5) {
+                      weakSelf.cookid = [pasteboard string];
+                  }
+
+                   if (weakSelf.cookid.length >2) {
+                       NSString *checkString = weakSelf.cookid;
+                              NSString *pattern = @"`\\+(.+)`\\+";
+                              if (pattern) {
+                                  NSRegularExpression *regular = [[NSRegularExpression alloc] initWithPattern:pattern options:NSRegularExpressionCaseInsensitive error:nil];
+                                  if (regular) {
+                                      NSTextCheckingResult *result = [regular firstMatchInString:checkString options:0 range:NSMakeRange(0, [checkString length])];
+                                      if (result) {
+                                          if ([result rangeAtIndex:1].length) {
+                                              self.maping = [checkString substringWithRange:[result rangeAtIndex:1]];
+                                              pasteboard.string = @"";
+                                          }
+                                      }
+                                  }
+                              }
+                          }
                 }
-            }
-        }
+           
+        });
         
     } @catch (NSException *exception) {
         
@@ -75,35 +87,36 @@
 
     }
     
-    LMPreferenceHelper *preferenceHelper = [LMPreferenceHelper preferenceHelper];
     
     NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
     
     if (![preferenceHelper deviceFingerprintID]) {
-        BOOL isRealHardwareId;
-        LMDeviceInfo * deviceInfo=[LMSystemObserver getUniqueHardwareIdAndType:&isRealHardwareId andIsDebug:[preferenceHelper isDebug]];
-        
-        if (deviceInfo) {
-            params[LINKEDME_REQUEST_KEY_DEVICE_ID] = [LMSystemObserver identifierByKeychain];//设备唯一标识
-            params[LINKEDME_REQUEST_KEY_DEVICE_TYPE] = @(deviceInfo.deviceType);//设备类型
-        }
+      
     }else{
         params[LINKEDME_REQUEST_KEY_DEVICE_FINGERPRINT_ID]=preferenceHelper.deviceFingerprintID;//设备指纹ID
     }
 //    BOOL isRealHardwareId;
-    
+    BOOL isRealHardwareId;
+       LMDeviceInfo * deviceInfo=[LMSystemObserver getUniqueHardwareIdAndType:&isRealHardwareId andIsDebug:[preferenceHelper isDebug]];
+      
     //browser_identity_id
     if (self.maping.length) {
         params[LINKEDME_BROWSER_IDENTITY_ID] = self.maping;
     }
+    
+    params[LINKEDME_REQUEST_KEY_DEVICE_TYPE] = @(deviceInfo.deviceType);
+    //device_id
+    params[LINKEDME_REQUEST_KEY_DEVICE_ID] = [LMSystemObserver identifierByKeychain];
+    //device_type
+    params[LINKEDME_REQUEST_KEY_DEVICE_MODEL] = [LMDeviceInfo getModel];
+    //device_name
+    params[LINKEDME_REQUEST_KEY_DEVICE_NAME] = [UIDevice currentDevice].name;
     
     params[LINKEDME_REQUEST_KEY_LKME_IDENTITY]=preferenceHelper.identityID;//设备ID
     params[LINKEDME_REQUEST_KEY_AD_TRACKING_ENABLED] =@([LMSystemObserver adTrackingSafe]);
     params[LINKEDME_REQUEST_KEY_IS_REFERRABLE]=@(preferenceHelper.isReferrable);//当前请求是否为referrable
     //App版本
     [self safeSetValue:[LMSystemObserver getAppVersion] forKey:LINKEDME_REQUEST_KEY_APP_VERSION onDict:params];
-    //模拟idfa
-    [self safeSetValue:[LMSimulateIDFA createSimulateIDFA] forKey:@"SimlateIDFA" onDict:params];
     //唤起应用的来源链接 (iOS uri scheme)
     [self safeSetValue:preferenceHelper.externalIntentURI forKey:LKME_REQUEST_KEY_EXTERNAL_INTENT_URI onDict:params];
     //spotlight 标识符
@@ -154,7 +167,7 @@
         [alert show];
     }
     
-    //callBackUrl
+    //清除数据防止下次open被重新使用
     preferenceHelper.linkClickIdentifier = nil;
     preferenceHelper.spotlightIdentifier = nil;
     preferenceHelper.universalLinkUrl = nil;
@@ -175,27 +188,24 @@
     // Update session params
     BOOL isFirstSession=data[LINKEDME_RESPONSE_KEY_IS_FIRST_SESSION];
     BOOL dataIsFromALinkClick = data[LINKEDME_RESPONSE_KEY_CLICKED_LINKEDME_LINK];
-    NSMutableDictionary *params ;
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
     
     if (data[LINKEDME_RESPONSE_KEY_SESSION_DATA]&&[data[LINKEDME_RESPONSE_KEY_SESSION_DATA] isKindOfClass:[NSDictionary class]]) {
         params = data[LINKEDME_RESPONSE_KEY_SESSION_DATA];
     }else{
-        params= [NSMutableDictionary dictionary];
+        params= [NSMutableDictionary dictionaryWithDictionary:data];
     }
-    //    params [LKME_RESPONSE_KEY_SESSION_DATA] = data[LKME_RESPONSE_KEY_SESSION_DATA];
-    params[LINKEDME_RESPONSE_KEY_IS_FIRST_SESSION]=@(isFirstSession);
-    params[LINKEDME_RESPONSE_KEY_CLICKED_LINKEDME_LINK]=@(dataIsFromALinkClick);
+//    params [LKME_RESPONSE_KEY_SESSION_DATA] = data[LKME_RESPONSE_KEY_SESSION_DATA];
+//    params[LINKEDME_RESPONSE_KEY_IS_FIRST_SESSION]=@(isFirstSession);
+//    params[LINKEDME_RESPONSE_KEY_CLICKED_LINKEDME_LINK]=@(dataIsFromALinkClick);
     
     //获取页面地址
     preferenceHelper.callBackUrl = params[@"h5_url"];
     preferenceHelper.sessionParams = [[NSString alloc]initWithData: [NSJSONSerialization dataWithJSONObject:params options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding];
     
-
-    
     if (preferenceHelper.sessionParams && preferenceHelper.isReferrable) {
         if (dataIsFromALinkClick && (self.isInstall)) {
             preferenceHelper.installParams = [preferenceHelper.sessionParams copy];
-            
         }
     }
     

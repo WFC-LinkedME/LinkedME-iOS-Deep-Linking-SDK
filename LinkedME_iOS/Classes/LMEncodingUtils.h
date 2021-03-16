@@ -12,6 +12,16 @@
 
 @interface LMEncodingUtils : NSObject
 
+#pragma mark WireFormat
+
+extern NSDate*   LMDateFromWireFormat(id object);
+extern NSNumber* LMWireFormatFromDate(NSDate *date);
+extern NSNumber* LMWireFormatFromBool(BOOL b);
+
+extern NSString* LMStringFromWireFormat(id object);
+extern NSString* LMWireFormatFromString(NSString *string);
+
+
 + (NSString *)base64EncodeStringToString:(NSString *)strData;
 + (NSString *)base64DecodeStringToString:(NSString *)strData;
 + (NSString *)base64EncodeData:(NSData *)objData;

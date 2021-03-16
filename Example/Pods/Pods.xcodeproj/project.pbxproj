@@ -7,73 +7,73 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		019B1A8B362851421B84916F484990C8 /* LMKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 3098D9097B8BA914B3AB4913C84DABBE /* LMKeychain.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		089BD386AE06E0384E933BFA6678D2C4 /* LMContentDiscoveryManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 46E17239C6881BCE8BC32D8B3BC3FD3F /* LMContentDiscoveryManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		0FB1085F4D4BD639B021D5EFA4A6C06A /* LMError.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E635FE328DFC7E4701ADE88504874A /* LMError.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		12E8B107FFFBA99BE96371911B238671 /* LMLogoutRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D8D8DE535025D3EED81FFD6ED195339 /* LMLogoutRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		2B6F90CBF0CD1F3C126393C03CF8C985 /* LMShortUrlRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 836397E5ADAD6772458ED8CCCE8975B0 /* LMShortUrlRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		2CFC41FD6D573624D6E84BF0BAD24816 /* LMSpotlightUrlRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E623740D5BCEE9D50A636AF86D2B2E1F /* LMSpotlightUrlRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		3005403143BFBBAE4F67593B7D88B8A2 /* LMUniversalObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A0A60BAC0FC95EC7162A712380B6B28 /* LMUniversalObject.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		30A0F97D62C21350D3B3C4BB8DB62E38 /* LinkedME.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E3BF2D29472B613C0B0E3A7EFD6C871 /* LinkedME.m */; };
-		32EB1D4FF0549B2D61D6026749C88447 /* LMServerRequestQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 6877CA44439C709480A26996432E50E5 /* LMServerRequestQueue.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		3B18EC5D538C5897922AA1BFB537BDE5 /* LMAppConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3F1DB489595CED633C5022FC563E98 /* LMAppConnect.m */; };
-		446B400A8C3BF416A1ED2C3BEAC6C4D5 /* LMServerRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = B552D36FE0B333F1D3036D375058F27D /* LMServerRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		4489E8063FCF4EE5416F4B6E29CA2AB5 /* LMError.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBE7A256B6BD443C149AC1EEA9A1A5D /* LMError.m */; };
-		4CE4A7103FBAB60B12F8949BD0C5D3C7 /* LinkedME.h in Headers */ = {isa = PBXBuildFile; fileRef = 631D74BB8B573853561A54B3AA91DE7B /* LinkedME.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		4D8C23C09D56F811EF415155972F93B5 /* LKMEConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 35870E5946012B6C58E6A94E17E90877 /* LKMEConfig.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		4EC7C704CB3530FBBA31FD9B8AABDF74 /* LMAppConnect.h in Headers */ = {isa = PBXBuildFile; fileRef = 22CE174BB4F92152FACE1F6D027D7602 /* LMAppConnect.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		53C8707E90BABF14206A6B13B5B37FCA /* LMOpenRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C59A5C76E33037554537E223545D1E /* LMOpenRequest.m */; };
-		581457A792C6E52155182DF1B638D95C /* LMTrackingConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 672FB65749C13227BB859C6558FBD6D3 /* LMTrackingConstants.m */; };
-		5A3493E97AB25CCBFC28E1A4FD4D302F /* LMSystemObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F5363E745E1E8C1D47982E7AA4B580 /* LMSystemObserver.m */; };
-		6DA9ECE8DFF2495DA975403CD377371A /* LMServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = A482284A9F68364E8010AFA3A8648AEC /* LMServerResponse.m */; };
-		6DD9630E5902AC9D6C53D7FDA62A3AD6 /* LMCloseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9C0C69DB123CC33D4C7AC31C0B853A /* LMCloseRequest.m */; };
-		78B9ED44CB0B2BDA3B99DC77EA77E1D3 /* LMConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 34CEE67CB40B615EB431144456043C53 /* LMConstants.m */; };
-		79A5BE4A616E0AE9783D27478C8CB26B /* LM-SDK-Prefix.pch in Sources */ = {isa = PBXBuildFile; fileRef = 5ECB01AE7DA80D7EA6ABBF4CAA1E805C /* LM-SDK-Prefix.pch */; };
-		7E8515CB2A21CDC4C464076111ECBCEE /* LMDeepLinkingController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E93B61914B787BFBA2C84032BA0F2C7 /* LMDeepLinkingController.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		8058A6389409E616F83B22C6096DDCAC /* LMSetIdentityRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = FEFE2F3E6A76737A5AC86289D60704EC /* LMSetIdentityRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		81BE17E66B337D56E5C38B6380D4BF26 /* LMPreferenceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCEEA33F33C414AAC5C1E3E03C00AB0 /* LMPreferenceHelper.m */; };
-		846B4143E2E72CDB6DE8B078D1E34C2B /* LMEncodingUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB83DB974B816B8E79AAB9187544AF3 /* LMEncodingUtils.m */; };
-		8F4C7B5FDEF23AB69E857EC73332978C /* LMSpotlightUrlRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9EB1AACB79B62174EEDC745237E1CA /* LMSpotlightUrlRequest.m */; };
-		913F1217BFD8458037E41C1DE773630E /* LMTrackingConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EA3B46D3CE9E768BA6DECC983660F5F /* LMTrackingConstants.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		92DB5B213E0CD79910E83612552387E8 /* LMServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CA58858D3C97F389BDE6D62FAB2ABC2 /* LMServerRequest.m */; };
-		93A14A1A4845324D829812E23F4D3AA9 /* LMEncodingUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = C1DB75C6DF49D9C548365C0E4C30B355 /* LMEncodingUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		94605F24DE3134BE895D9326E49EE1C6 /* LinkedME_iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 71267918F80973ED4C669F8CA3AAF3B3 /* LinkedME_iOS-dummy.m */; };
+		012FB1C3CD5EFBB94FFA649DD28CF867 /* LMKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = F56AE7EF0CECAF9DD5380A794D71FBC6 /* LMKeychain.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		01B88A7DC2A1692A9D8FA82D70ED5DA7 /* LMOpenRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E51F4332316B69DB6ADBBCA80A46039 /* LMOpenRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		043DE66ED05FD0E7B883A0532DD70A89 /* LMLoadRewardsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B5E0A210F07954F1DD175F53EBC6359 /* LMLoadRewardsRequest.m */; };
+		06AA3C864B31289E7CDE8B571E712E47 /* LMBaseEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 577B574601E7434573D6283B53E6120C /* LMBaseEntity.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0E51E1CC6B51F4C9BF54AF1AF6FF685D /* LinkedME.h in Headers */ = {isa = PBXBuildFile; fileRef = 8674733C48E8CA740E485A791150551C /* LinkedME.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		14E6AF8F472657A53A661180C8C0F0A5 /* LMEncodingUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF02CEF52F2BC52F4F703C1B3AE6F05 /* LMEncodingUtils.m */; };
+		1CC16E77F48F5975D514EB3767409D53 /* LMConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = F7082832AE645556BB73BEBC1649B40C /* LMConstants.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		37DD1EFEB8C1A2CE7C61034567D069F8 /* LMServerRequestQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 0485C9D55D5BA94020251C30F9503F40 /* LMServerRequestQueue.m */; };
+		396AC8767ACF34E70091D3B3720DF785 /* LMLinkData.h in Headers */ = {isa = PBXBuildFile; fileRef = 79E508A98599425E21C67E63877B14CC /* LMLinkData.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3C1CB6EC2BC177853FEEA18D5E421161 /* LMShortUrlRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 076AC22370628D49DDB8443F4E286163 /* LMShortUrlRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3D7167F8C2935CC2C85B1E0AA2F68E56 /* LMOpenRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BBF0B3B8D95B6407E7EEC2C2E0B67D /* LMOpenRequest.m */; };
+		426217E6DB51F0830E75D79D1AC18AE6 /* LMLinkCache.h in Headers */ = {isa = PBXBuildFile; fileRef = E9994F6B1F9C1D8F7EFE572AE221284B /* LMLinkCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		45760E0F0C5A819BFABFE1A02B986D33 /* LinkedME_iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32167436F99BABC5565389E8AA358F61 /* LinkedME_iOS-dummy.m */; };
+		4D5DE5BD371FB1D1632C68CF0ABD1302 /* LMLogoutRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 67F42476EB94B2BFC8BF49ECEE11E992 /* LMLogoutRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4E734C887294897CBD361C821C856892 /* LMApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AF32787D1AAE013E82943AE1FE0D2FD /* LMApplication.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5093905F7E72086DA1D3581CE1F2557C /* LMShortUrlRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD802F7C2E505D4586FA5B4B81CC9FA /* LMShortUrlRequest.m */; };
+		50E929E3F8366A6B01EF2E7270ECE167 /* LMSetIdentityRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = A9A6D3B139FE378561546FC04F102251 /* LMSetIdentityRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6B2EC8B28B606D0C555DC26F931F60B0 /* LKMEConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = EF789BA53B7DB9928C83267DCD042FAD /* LKMEConfig.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6EC6C6E50142FE18FB1B795F5617D6B2 /* LM-SDK-Prefix.pch in Sources */ = {isa = PBXBuildFile; fileRef = BCAF2DF3624874C43A601B1238503288 /* LM-SDK-Prefix.pch */; };
+		6F82117D485B14E767276D4338546532 /* LMCloseRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 84BA8E0E78042F1E38420F9B18503ED7 /* LMCloseRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		760398BE1DD9187E649DB029FCF9EB32 /* LMEncodingUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E7B801986F497D032034CF0240DD167 /* LMEncodingUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		77AD5213456598BB5C17888AD13DD02D /* LMDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = D22CFAB817A4C436D4D3BA78A638BF63 /* LMDeviceInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		79F362622028D91D44511A6BFDDF4B98 /* LMDeepLinkingController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EAC1BB6C6D5A92EA7402B6188DAB2B1 /* LMDeepLinkingController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7E28406C924046BE8B410463C4BF6938 /* LMStrongMatchHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDA1D5482CE3872C03B57315D0CD9EC /* LMStrongMatchHelper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7E33C80229057D3ED141854C6337A56F /* LMSpotlightUrlRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 605547127BD49C87BB100A1C800CFF0E /* LMSpotlightUrlRequest.m */; };
+		83C77B84B000017B1960146B70BB221C /* LMLinkData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA5AF378101D1ABE59F101F39FDD9A7 /* LMLinkData.m */; };
+		868DFFE5BBFA817EB478178135CBA6CC /* LinkedME.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA7BF99663CB99809F14F96E158A263 /* LinkedME.m */; };
+		89E4D68AD212C3530CE78617D6077889 /* LMInstallRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C763C71A16D8EC59E97BFC591F601D1 /* LMInstallRequest.m */; };
+		8A65A955D110B9048AAC8C3531C232B9 /* LMError.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A06E70CA62D185435FDE6CEF6D36F9F /* LMError.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8CFAE9EB62362D830A20B26D6EBC17C6 /* LMAppConnect.h in Headers */ = {isa = PBXBuildFile; fileRef = 22DE8CA1A7D9A1E884AE8494E7C1C438 /* LMAppConnect.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8E977A5BCCDA8242CC7E630CF12F2AF1 /* LMUniversalObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B8CA49DD541AAA1D0005FCC727FDD9E1 /* LMUniversalObject.m */; };
+		9365EDE26D7EFD3AD400042AC10E50AF /* LMSystemObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C46D5E2A807342B1F01706C80EA979 /* LMSystemObserver.m */; };
+		937D7A84F3C9CC5714B880920018ABA5 /* LMServerRequestQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CB0F410C5C3572DF30254390AD6A71A /* LMServerRequestQueue.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		94E600D664BD43A256C1511EA055FB38 /* Pods-LinkedME_iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3B5FD46C78CB8D8D247B126ED15DD0 /* Pods-LinkedME_iOS-dummy.m */; };
-		9BA263F5B636DBF0FA200534BAC49FC8 /* LMLinkProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F7F7B7579F1D2AA07E5EA0D375B359E /* LMLinkProperties.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A00D7F76C53864E53FB2A290A3D60E30 /* LMLinkCache.h in Headers */ = {isa = PBXBuildFile; fileRef = BBEB18F8FF9F59DBA86763AD26D40996 /* LMLinkCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A1D5E01D808B371951065BC709664490 /* LMDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A3C0167B00D3220A23BF2B36B105022 /* LMDeviceInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A36F42FE38D17604C96D56EFE04D50D5 /* LMBaseEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4E9343B7581595AADC9ED719312468 /* LMBaseEntity.m */; };
-		A389098B07ACA09CD0D9675B7A8972F9 /* LMLinkData.h in Headers */ = {isa = PBXBuildFile; fileRef = 41A9956A13A8F11201EED7159BDAF8FD /* LMLinkData.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A467108CB4749EF59DD4F4B16B01E812 /* LMLoadRewardsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1483CBD64C3103F884834406A677287D /* LMLoadRewardsRequest.m */; };
-		A513AC50273266AE3CC4A3598B797C42 /* LMKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = D8741EA4C7B6E4CEE739EC0FD0BBEA7F /* LMKeychain.m */; };
-		A7582034682F21E46BAEAE8D544EB0F9 /* LMSystemObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = F62219A74AA60D153C9D9613350B993E /* LMSystemObserver.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		AC2C4DCA551FB169821806C98C8FD043 /* LMRegisterViewRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B0BE6AA23EDF6BE591D9CDB73E9BB01 /* LMRegisterViewRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B0163CFEAFABFB377E98B5791E669295 /* LMServerInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F2DDEC21C6EC1E2283933873AFEE4C1 /* LMServerInterface.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B020FE562D8B0AF6DE0957629385883A /* LMShortUrlRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 78EF0CB62BB3982C5A8701AD2795B840 /* LMShortUrlRequest.m */; };
-		B1B591E854078E03CDB6CC5BEA0C8E74 /* LMRegisterViewRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2093A2965AE5648AD62630A7DBBDBD /* LMRegisterViewRequest.m */; };
-		B25001FCF3424D2F3DE356694B44D21B /* LMLinkProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B9AD4075E345EBB6B4EE8CC169D550A /* LMLinkProperties.m */; };
-		B26560BE7048BAE5B760D88B6ECFF6B8 /* LMOpenRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DA58B1E6872DC23E69043B8AD96D970 /* LMOpenRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B2E1A61CE847956373ED0DBE778ADC22 /* LMInstallRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 3371CF85ED5EE331B5A5D4AC1916FFE6 /* LMInstallRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B3C516BBDC897FC871871FECC1D11BF1 /* LMLinkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = ED08AD079FC69019DCB8E17694908173 /* LMLinkCache.m */; };
-		B4D067E98B8809D49DCDB2AD1BAE8C13 /* LMLoadRewardsRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D12B0407A99B015CBE4C1B062FBCEB5 /* LMLoadRewardsRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B4FE2DABB23702ABF490B8172F1B1E9B /* LMInstallRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B11E6216AA7133361A0DB1CD362C444 /* LMInstallRequest.m */; };
-		B695563C7131C2D88F642DF1E1E90FF6 /* LMLogoutRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F58BBCB3B8C8EBCA8F050EEBA1D9FA4A /* LMLogoutRequest.m */; };
-		B903B14A34CA71D3A9BDD6846647FD79 /* LMConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A962BA5A71365A93F9087A1EDFDABCF /* LMConstants.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		BB13211D8831EDE6C137C4692BBE56DC /* LMLinkData.m in Sources */ = {isa = PBXBuildFile; fileRef = C14B7072E89D236901915C0D52D388F9 /* LMLinkData.m */; };
-		BCC10E5F16A79B6395991C87DFE775A8 /* LMSimulateIDFA.h in Headers */ = {isa = PBXBuildFile; fileRef = DA1ECDA5F9B96337EC23D1B76FF30725 /* LMSimulateIDFA.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C507BD0FE97254F279933DF70A281413 /* LMSimulateIDFA.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CBD1F4339A2E32D5C2E48C221219A50 /* LMSimulateIDFA.m */; };
-		C84D957C70FDFBD2E0CEA18A12DB4BC3 /* LMUniversalObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E6559787ADA56974D29285EA068A89DC /* LMUniversalObject.m */; };
-		CC1CE58832D8EFCFF8A7FBF189AE0E95 /* LMCloseRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = BABFC4E4BE46CBD131DACE6757C3D478 /* LMCloseRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D3AD5F398A5BD9D9FC98DC1CDEB55C38 /* LMDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5AEF21409330CD7CE14717418EB8C3 /* LMDeviceInfo.m */; };
-		D7D82AB31549DC3950A1AE8F6A3B422A /* LMStrongMatchHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F38C0D137033472D49BCA145044276EE /* LMStrongMatchHelper.m */; };
-		E1944B96F3003DA448AF00C1413793B8 /* LMPreferenceHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = B5E10E6DCB41ACBC5B3AE9FE3C676C9C /* LMPreferenceHelper.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E385FE5033185863330D4567603105F5 /* LMServerInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 97CE20928A9D6D2936542F1F2D3B0EC4 /* LMServerInterface.m */; };
-		E3DFF9E46D8042D2E06B3AA59579F92A /* LMServerResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 1075771DB7A16CBECAE2DB6E0F221832 /* LMServerResponse.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E47E491CDC241F56A0FC89FEE3DA286D /* LMContentDiscoveryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 794097CB0FB5EC0337E5F65EE11E4FE3 /* LMContentDiscoveryManager.m */; };
-		EA16008589F711B40ECE9B94563C7D4D /* LMServerRequestQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F19586B98BF179A16B46C773B690B0 /* LMServerRequestQueue.m */; };
-		EAA8EE8F592585E3DEE95B75F09036CD /* LMStrongMatchHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = CAE7A576E9B084EAB194FAFDBFC1E7D9 /* LMStrongMatchHelper.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		EDAEAC902AE6F7C832B0C05540570644 /* LMBaseEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DDB896169C8FEA87F6432AB35CE04CA /* LMBaseEntity.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F96C622F8289C60859055507BCF65354 /* LMSetIdentityRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8972E0D569B64E3A61BFF2125CEF681E /* LMSetIdentityRequest.m */; };
+		963008CD6B9CB9D03B5253C1F264C415 /* LMTrackingConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = BE9814433F43A01CC9DF97BD21477A7A /* LMTrackingConstants.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		96D6FA3F98ADC9514A697296B0098F1D /* LMLinkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FEEFEEF183D35D178BFC675B3A7511E /* LMLinkCache.m */; };
+		9B1A7FD178877550FE2A9CFE1EDDBC15 /* LMPreferenceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AF34C6328111D5CA21DD20EB0944B0B7 /* LMPreferenceHelper.m */; };
+		9FB04B088867F915C24CC1B39040B103 /* LMPreferenceHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 252AC5B3369078970055F0F68596DB69 /* LMPreferenceHelper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A515E7B063D33BCCB986A6845EB52BA0 /* LMLogoutRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB519AC3280BED1D12E89B2EB03C70E /* LMLogoutRequest.m */; };
+		A808890DADC85B9649D160F1372D2D53 /* LMContentDiscoveryManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E77F64BE90E36FD65F104E0529C00589 /* LMContentDiscoveryManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AB0C1990829CBE9628217DC5538ADE6E /* LMApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D9A2D5BC1553B7652D60800DA0DC50 /* LMApplication.m */; };
+		AFF02FBDEE68B8B91B8FAD05448CB8FF /* LMServerInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E89A1715C899DEF3145F729BDAD198B /* LMServerInterface.m */; };
+		B240B7133A6077E3B3AE595D81ADE716 /* LMSystemObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = C77B86FDDBB9CCE1F1129ED206F2FE5B /* LMSystemObserver.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B7E4B7F960A4ED97BEA1A503EB50A020 /* LMStrongMatchHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E613D19F9341545BD15846249699E1 /* LMStrongMatchHelper.m */; };
+		BCEB3704DD66FDCAC9D9EB69961DCB73 /* LMError.m in Sources */ = {isa = PBXBuildFile; fileRef = B72BB5E836F70EB2C479E059475BF1B7 /* LMError.m */; };
+		BDDD875FC4A99A5E5B7FEB6252C729A2 /* LMLinkProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 99F41FDA52776EF3EE9F66EC9FAFF30F /* LMLinkProperties.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C04A4FBB9431E94A3502B82088B7905C /* LMServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C3A507EA0B214F09456343FB0C0BAF /* LMServerResponse.m */; };
+		C1FAEEF40ECCCD3FFD4BC200172BC1F6 /* LMInstallRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = D63DC08B358BF497B679A0B44D65A4A3 /* LMInstallRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C45F061943E122F7926C9576BB089780 /* LMAppConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = 387A82B116AD6ED50A1CB81B5B22FB65 /* LMAppConnect.m */; };
+		C6595813AB52F88205303365CC7AA876 /* LMRegisterViewRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C3BED0F70504E992E6BDE69A87775038 /* LMRegisterViewRequest.m */; };
+		C718A6440DB851F9E7E2F8F513FD703F /* LMKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 170651702E0C615AA10A6531E0D2C0F5 /* LMKeychain.m */; };
+		CBAE4394FDC210F0DE18806F4FA69980 /* LMBaseEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC4B0CD4532BB2EA0196A7E74B13FC6 /* LMBaseEntity.m */; };
+		CDE674C21B9308D90F62797D7755D419 /* LMCloseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 95EEAC02610B85EAD24B59826039D647 /* LMCloseRequest.m */; };
+		D43EDB4FDBA68588462FEDA4671FF575 /* LMServerInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 737246D620EAEA7262E50FEE3FC82E5F /* LMServerInterface.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D46331B687CDF669A5FD216FC9FBCD0C /* LMDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E6307F7B11C242F80CAD07977B9F7398 /* LMDeviceInfo.m */; };
+		D6C590ED40D4FBB717B3810CE6250FBE /* LMTrackingConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E0A5968FC4FFB1328F735693208E4B /* LMTrackingConstants.m */; };
+		DA9F413D5190AB2205CCBB398602A7A4 /* LMSpotlightUrlRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 53636AB33811451C13BDA8246786FE77 /* LMSpotlightUrlRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DE3C2AC04B19319373CC2DD12AC62331 /* LMUniversalObject.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B0C2AAF63A5BBFCAA9CC817F5CCBE7 /* LMUniversalObject.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E1F681485D8D3AD34A2823CF7109DCC0 /* LMServerResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = E7C4B8EB69155AEB353A6DE506092111 /* LMServerResponse.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E32C7574A8F078D70BBAD1C321F5452A /* LMLoadRewardsRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FBD820C17D7FFCCCF5C285D818C6502 /* LMLoadRewardsRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E6B590E534E38182A3D1BDD905679F2F /* LMServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF8A8CB76DA9B0EBACF5B94210060F6 /* LMServerRequest.m */; };
+		E764E5CA21E5537EAF7D6B0F0A619AEB /* LMSetIdentityRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 55BCF03BB2DA8A6D154DB175DB069485 /* LMSetIdentityRequest.m */; };
+		E855DC6B1613B6A711CBA79DDBE3AD6A /* LMContentDiscoveryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B7D2999556F5F1E832F193125F10EBA5 /* LMContentDiscoveryManager.m */; };
+		E942D097DD651979C49CCAF0C803ABDA /* LMRegisterViewRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AD4B2246615C9324AC3886E0437BD35 /* LMRegisterViewRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		ED636E2C8B3131CF8422BABF2CAD3D30 /* LMServerRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F07A448E47F8492E605C87B8ED2CD165 /* LMServerRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F56E1BDCE87943F542AB9B263165776A /* LMConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D48546BA1835C95E65A5DE86EFCFCAD /* LMConstants.m */; };
+		FBA079593374F879E25C2B6E62D43D95 /* LMLinkProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 06D6ABF2201E5F270DDD1C04D264C070 /* LMLinkProperties.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,85 +87,86 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E635FE328DFC7E4701ADE88504874A /* LMError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMError.h; path = LinkedME_iOS/Classes/LMError.h; sourceTree = "<group>"; };
-		096FA1FDCCC74FD3DE8AE8E0D5F81907 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		0E3BF2D29472B613C0B0E3A7EFD6C871 /* LinkedME.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LinkedME.m; sourceTree = "<group>"; };
+		0485C9D55D5BA94020251C30F9503F40 /* LMServerRequestQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LMServerRequestQueue.m; sourceTree = "<group>"; };
+		06D6ABF2201E5F270DDD1C04D264C070 /* LMLinkProperties.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LMLinkProperties.m; sourceTree = "<group>"; };
+		076AC22370628D49DDB8443F4E286163 /* LMShortUrlRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMShortUrlRequest.h; path = LinkedME_iOS/Classes/LMShortUrlRequest.h; sourceTree = "<group>"; };
+		0C763C71A16D8EC59E97BFC591F601D1 /* LMInstallRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMInstallRequest.m; path = LinkedME_iOS/Classes/LMInstallRequest.m; sourceTree = "<group>"; };
+		0DA5AF378101D1ABE59F101F39FDD9A7 /* LMLinkData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LMLinkData.m; sourceTree = "<group>"; };
 		0F4EB8831514D38879384C244F9CDF76 /* Pods-LinkedME_iOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LinkedME_iOS-acknowledgements.plist"; sourceTree = "<group>"; };
-		1075771DB7A16CBECAE2DB6E0F221832 /* LMServerResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LMServerResponse.h; sourceTree = "<group>"; };
-		1483CBD64C3103F884834406A677287D /* LMLoadRewardsRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMLoadRewardsRequest.m; path = LinkedME_iOS/Classes/LMLoadRewardsRequest.m; sourceTree = "<group>"; };
-		1A0A60BAC0FC95EC7162A712380B6B28 /* LMUniversalObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LMUniversalObject.h; sourceTree = "<group>"; };
-		1B11E6216AA7133361A0DB1CD362C444 /* LMInstallRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMInstallRequest.m; path = LinkedME_iOS/Classes/LMInstallRequest.m; sourceTree = "<group>"; };
-		1D12B0407A99B015CBE4C1B062FBCEB5 /* LMLoadRewardsRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMLoadRewardsRequest.h; path = LinkedME_iOS/Classes/LMLoadRewardsRequest.h; sourceTree = "<group>"; };
-		1D4E9343B7581595AADC9ED719312468 /* LMBaseEntity.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMBaseEntity.m; path = LinkedME_iOS/Classes/LMBaseEntity.m; sourceTree = "<group>"; };
-		1D8D8DE535025D3EED81FFD6ED195339 /* LMLogoutRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMLogoutRequest.h; path = LinkedME_iOS/Classes/LMLogoutRequest.h; sourceTree = "<group>"; };
-		22CE174BB4F92152FACE1F6D027D7602 /* LMAppConnect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMAppConnect.h; path = LinkedME_iOS/Classes/LMAppConnect.h; sourceTree = "<group>"; };
-		279E6B855B9DDA52FFE29C3F465898E2 /* LinkedME_iOS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LinkedME_iOS.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		2B0BE6AA23EDF6BE591D9CDB73E9BB01 /* LMRegisterViewRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMRegisterViewRequest.h; path = LinkedME_iOS/Classes/LMRegisterViewRequest.h; sourceTree = "<group>"; };
-		2F2DDEC21C6EC1E2283933873AFEE4C1 /* LMServerInterface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LMServerInterface.h; sourceTree = "<group>"; };
-		3098D9097B8BA914B3AB4913C84DABBE /* LMKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMKeychain.h; path = LinkedME_iOS/Classes/LMKeychain.h; sourceTree = "<group>"; };
-		3371CF85ED5EE331B5A5D4AC1916FFE6 /* LMInstallRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMInstallRequest.h; path = LinkedME_iOS/Classes/LMInstallRequest.h; sourceTree = "<group>"; };
-		34CEE67CB40B615EB431144456043C53 /* LMConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMConstants.m; path = LinkedME_iOS/Classes/LMConstants.m; sourceTree = "<group>"; };
-		35870E5946012B6C58E6A94E17E90877 /* LKMEConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKMEConfig.h; path = LinkedME_iOS/Classes/LKMEConfig.h; sourceTree = "<group>"; };
+		103FEB050CA37C750C48049410325B64 /* LinkedME_iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LinkedME_iOS-prefix.pch"; sourceTree = "<group>"; };
+		170651702E0C615AA10A6531E0D2C0F5 /* LMKeychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMKeychain.m; path = LinkedME_iOS/Classes/LMKeychain.m; sourceTree = "<group>"; };
+		21129564A25F86177A69CD39FF8E4D1E /* LinkedME_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LinkedME_iOS.release.xcconfig; sourceTree = "<group>"; };
+		22DE8CA1A7D9A1E884AE8494E7C1C438 /* LMAppConnect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMAppConnect.h; path = LinkedME_iOS/Classes/LMAppConnect.h; sourceTree = "<group>"; };
+		24E0A5968FC4FFB1328F735693208E4B /* LMTrackingConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMTrackingConstants.m; path = LinkedME_iOS/Classes/LMTrackingConstants.m; sourceTree = "<group>"; };
+		252AC5B3369078970055F0F68596DB69 /* LMPreferenceHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LMPreferenceHelper.h; sourceTree = "<group>"; };
+		2FEEFEEF183D35D178BFC675B3A7511E /* LMLinkCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LMLinkCache.m; sourceTree = "<group>"; };
+		32167436F99BABC5565389E8AA358F61 /* LinkedME_iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LinkedME_iOS-dummy.m"; sourceTree = "<group>"; };
+		387A82B116AD6ED50A1CB81B5B22FB65 /* LMAppConnect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMAppConnect.m; path = LinkedME_iOS/Classes/LMAppConnect.m; sourceTree = "<group>"; };
 		39EAFA520A5DB9BF2376F97B7E1ED003 /* libPods-LinkedME_iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-LinkedME_iOS.a"; path = "libPods-LinkedME_iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3DA58B1E6872DC23E69043B8AD96D970 /* LMOpenRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMOpenRequest.h; path = LinkedME_iOS/Classes/LMOpenRequest.h; sourceTree = "<group>"; };
-		3EBE7A256B6BD443C149AC1EEA9A1A5D /* LMError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMError.m; path = LinkedME_iOS/Classes/LMError.m; sourceTree = "<group>"; };
-		41A9956A13A8F11201EED7159BDAF8FD /* LMLinkData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LMLinkData.h; sourceTree = "<group>"; };
-		46E17239C6881BCE8BC32D8B3BC3FD3F /* LMContentDiscoveryManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMContentDiscoveryManager.h; path = LinkedME_iOS/Classes/LMContentDiscoveryManager.h; sourceTree = "<group>"; };
-		492F65C2B4BDBCE8CA4B46CAD13F305A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		4B9AD4075E345EBB6B4EE8CC169D550A /* LMLinkProperties.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LMLinkProperties.m; sourceTree = "<group>"; };
-		4D2ED7B31ED2696467AF07185DDCFF06 /* LinkedME_iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LinkedME_iOS.xcconfig; sourceTree = "<group>"; };
-		4EA3B46D3CE9E768BA6DECC983660F5F /* LMTrackingConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMTrackingConstants.h; path = LinkedME_iOS/Classes/LMTrackingConstants.h; sourceTree = "<group>"; };
-		5B5AEF21409330CD7CE14717418EB8C3 /* LMDeviceInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMDeviceInfo.m; path = LinkedME_iOS/Classes/LMDeviceInfo.m; sourceTree = "<group>"; };
-		5CBD1F4339A2E32D5C2E48C221219A50 /* LMSimulateIDFA.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMSimulateIDFA.m; path = LinkedME_iOS/Classes/LMSimulateIDFA.m; sourceTree = "<group>"; };
-		5DDB896169C8FEA87F6432AB35CE04CA /* LMBaseEntity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMBaseEntity.h; path = LinkedME_iOS/Classes/LMBaseEntity.h; sourceTree = "<group>"; };
-		5ECB01AE7DA80D7EA6ABBF4CAA1E805C /* LM-SDK-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "LM-SDK-Prefix.pch"; path = "LinkedME_iOS/Classes/LM-SDK-Prefix.pch"; sourceTree = "<group>"; };
-		5F9EB1AACB79B62174EEDC745237E1CA /* LMSpotlightUrlRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMSpotlightUrlRequest.m; path = LinkedME_iOS/Classes/LMSpotlightUrlRequest.m; sourceTree = "<group>"; };
-		631D74BB8B573853561A54B3AA91DE7B /* LinkedME.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LinkedME.h; sourceTree = "<group>"; };
+		3BDA1D5482CE3872C03B57315D0CD9EC /* LMStrongMatchHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMStrongMatchHelper.h; path = LinkedME_iOS/Classes/LMStrongMatchHelper.h; sourceTree = "<group>"; };
+		3E51F4332316B69DB6ADBBCA80A46039 /* LMOpenRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMOpenRequest.h; path = LinkedME_iOS/Classes/LMOpenRequest.h; sourceTree = "<group>"; };
+		3FF02CEF52F2BC52F4F703C1B3AE6F05 /* LMEncodingUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMEncodingUtils.m; path = LinkedME_iOS/Classes/LMEncodingUtils.m; sourceTree = "<group>"; };
+		4E995370F05314B4929E40204B2841DD /* LinkedME_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LinkedME_iOS.debug.xcconfig; sourceTree = "<group>"; };
+		52C3A507EA0B214F09456343FB0C0BAF /* LMServerResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LMServerResponse.m; sourceTree = "<group>"; };
+		53636AB33811451C13BDA8246786FE77 /* LMSpotlightUrlRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMSpotlightUrlRequest.h; path = LinkedME_iOS/Classes/LMSpotlightUrlRequest.h; sourceTree = "<group>"; };
+		55BCF03BB2DA8A6D154DB175DB069485 /* LMSetIdentityRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMSetIdentityRequest.m; path = LinkedME_iOS/Classes/LMSetIdentityRequest.m; sourceTree = "<group>"; };
+		577B574601E7434573D6283B53E6120C /* LMBaseEntity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMBaseEntity.h; path = LinkedME_iOS/Classes/LMBaseEntity.h; sourceTree = "<group>"; };
+		5A06E70CA62D185435FDE6CEF6D36F9F /* LMError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMError.h; path = LinkedME_iOS/Classes/LMError.h; sourceTree = "<group>"; };
+		5AF32787D1AAE013E82943AE1FE0D2FD /* LMApplication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LMApplication.h; sourceTree = "<group>"; };
+		5D48546BA1835C95E65A5DE86EFCFCAD /* LMConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMConstants.m; path = LinkedME_iOS/Classes/LMConstants.m; sourceTree = "<group>"; };
+		605547127BD49C87BB100A1C800CFF0E /* LMSpotlightUrlRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMSpotlightUrlRequest.m; path = LinkedME_iOS/Classes/LMSpotlightUrlRequest.m; sourceTree = "<group>"; };
 		63EF20ECAB0AE042E85B937264DD1957 /* libLinkedME_iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libLinkedME_iOS.a; path = libLinkedME_iOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		65F5363E745E1E8C1D47982E7AA4B580 /* LMSystemObserver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMSystemObserver.m; path = LinkedME_iOS/Classes/LMSystemObserver.m; sourceTree = "<group>"; };
-		672FB65749C13227BB859C6558FBD6D3 /* LMTrackingConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMTrackingConstants.m; path = LinkedME_iOS/Classes/LMTrackingConstants.m; sourceTree = "<group>"; };
-		6877CA44439C709480A26996432E50E5 /* LMServerRequestQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LMServerRequestQueue.h; sourceTree = "<group>"; };
-		6BB83DB974B816B8E79AAB9187544AF3 /* LMEncodingUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMEncodingUtils.m; path = LinkedME_iOS/Classes/LMEncodingUtils.m; sourceTree = "<group>"; };
-		6E56158CED979A204ADEEF49578270BF /* LinkedME_iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LinkedME_iOS-prefix.pch"; sourceTree = "<group>"; };
-		6F7F7B7579F1D2AA07E5EA0D375B359E /* LMLinkProperties.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LMLinkProperties.h; sourceTree = "<group>"; };
-		71267918F80973ED4C669F8CA3AAF3B3 /* LinkedME_iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LinkedME_iOS-dummy.m"; sourceTree = "<group>"; };
-		77C59A5C76E33037554537E223545D1E /* LMOpenRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMOpenRequest.m; path = LinkedME_iOS/Classes/LMOpenRequest.m; sourceTree = "<group>"; };
-		78EF0CB62BB3982C5A8701AD2795B840 /* LMShortUrlRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMShortUrlRequest.m; path = LinkedME_iOS/Classes/LMShortUrlRequest.m; sourceTree = "<group>"; };
-		794097CB0FB5EC0337E5F65EE11E4FE3 /* LMContentDiscoveryManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMContentDiscoveryManager.m; path = LinkedME_iOS/Classes/LMContentDiscoveryManager.m; sourceTree = "<group>"; };
-		7A962BA5A71365A93F9087A1EDFDABCF /* LMConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMConstants.h; path = LinkedME_iOS/Classes/LMConstants.h; sourceTree = "<group>"; };
-		7E93B61914B787BFBA2C84032BA0F2C7 /* LMDeepLinkingController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LMDeepLinkingController.h; sourceTree = "<group>"; };
-		836397E5ADAD6772458ED8CCCE8975B0 /* LMShortUrlRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMShortUrlRequest.h; path = LinkedME_iOS/Classes/LMShortUrlRequest.h; sourceTree = "<group>"; };
-		8972E0D569B64E3A61BFF2125CEF681E /* LMSetIdentityRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMSetIdentityRequest.m; path = LinkedME_iOS/Classes/LMSetIdentityRequest.m; sourceTree = "<group>"; };
-		8BCEEA33F33C414AAC5C1E3E03C00AB0 /* LMPreferenceHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LMPreferenceHelper.m; sourceTree = "<group>"; };
-		8CA58858D3C97F389BDE6D62FAB2ABC2 /* LMServerRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LMServerRequest.m; sourceTree = "<group>"; };
-		8D2093A2965AE5648AD62630A7DBBDBD /* LMRegisterViewRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMRegisterViewRequest.m; path = LinkedME_iOS/Classes/LMRegisterViewRequest.m; sourceTree = "<group>"; };
-		95F19586B98BF179A16B46C773B690B0 /* LMServerRequestQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LMServerRequestQueue.m; sourceTree = "<group>"; };
-		97CE20928A9D6D2936542F1F2D3B0EC4 /* LMServerInterface.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LMServerInterface.m; sourceTree = "<group>"; };
-		9A3C0167B00D3220A23BF2B36B105022 /* LMDeviceInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMDeviceInfo.h; path = LinkedME_iOS/Classes/LMDeviceInfo.h; sourceTree = "<group>"; };
+		67F42476EB94B2BFC8BF49ECEE11E992 /* LMLogoutRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMLogoutRequest.h; path = LinkedME_iOS/Classes/LMLogoutRequest.h; sourceTree = "<group>"; };
+		6BB519AC3280BED1D12E89B2EB03C70E /* LMLogoutRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMLogoutRequest.m; path = LinkedME_iOS/Classes/LMLogoutRequest.m; sourceTree = "<group>"; };
+		737246D620EAEA7262E50FEE3FC82E5F /* LMServerInterface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LMServerInterface.h; sourceTree = "<group>"; };
+		75D9A2D5BC1553B7652D60800DA0DC50 /* LMApplication.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LMApplication.m; sourceTree = "<group>"; };
+		79E508A98599425E21C67E63877B14CC /* LMLinkData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LMLinkData.h; sourceTree = "<group>"; };
+		7AA7BF99663CB99809F14F96E158A263 /* LinkedME.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LinkedME.m; sourceTree = "<group>"; };
+		7B5E0A210F07954F1DD175F53EBC6359 /* LMLoadRewardsRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMLoadRewardsRequest.m; path = LinkedME_iOS/Classes/LMLoadRewardsRequest.m; sourceTree = "<group>"; };
+		7E89A1715C899DEF3145F729BDAD198B /* LMServerInterface.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LMServerInterface.m; sourceTree = "<group>"; };
+		84BA8E0E78042F1E38420F9B18503ED7 /* LMCloseRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMCloseRequest.h; path = LinkedME_iOS/Classes/LMCloseRequest.h; sourceTree = "<group>"; };
+		8674733C48E8CA740E485A791150551C /* LinkedME.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LinkedME.h; sourceTree = "<group>"; };
+		8E7B801986F497D032034CF0240DD167 /* LMEncodingUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMEncodingUtils.h; path = LinkedME_iOS/Classes/LMEncodingUtils.h; sourceTree = "<group>"; };
+		8FBD820C17D7FFCCCF5C285D818C6502 /* LMLoadRewardsRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMLoadRewardsRequest.h; path = LinkedME_iOS/Classes/LMLoadRewardsRequest.h; sourceTree = "<group>"; };
+		95EEAC02610B85EAD24B59826039D647 /* LMCloseRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMCloseRequest.m; path = LinkedME_iOS/Classes/LMCloseRequest.m; sourceTree = "<group>"; };
+		99F41FDA52776EF3EE9F66EC9FAFF30F /* LMLinkProperties.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LMLinkProperties.h; sourceTree = "<group>"; };
 		9A8C111AF8F258825078D5D9E7BB5F3E /* Pods-LinkedME_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LinkedME_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		9AD4B2246615C9324AC3886E0437BD35 /* LMRegisterViewRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMRegisterViewRequest.h; path = LinkedME_iOS/Classes/LMRegisterViewRequest.h; sourceTree = "<group>"; };
+		9BF8A8CB76DA9B0EBACF5B94210060F6 /* LMServerRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LMServerRequest.m; sourceTree = "<group>"; };
+		9CB0F410C5C3572DF30254390AD6A71A /* LMServerRequestQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LMServerRequestQueue.h; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A482284A9F68364E8010AFA3A8648AEC /* LMServerResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LMServerResponse.m; sourceTree = "<group>"; };
+		9EAC1BB6C6D5A92EA7402B6188DAB2B1 /* LMDeepLinkingController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LMDeepLinkingController.h; sourceTree = "<group>"; };
+		A0B7EA91D36D797A86C23B7CEA66EF7D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		A6BBF0B3B8D95B6407E7EEC2C2E0B67D /* LMOpenRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMOpenRequest.m; path = LinkedME_iOS/Classes/LMOpenRequest.m; sourceTree = "<group>"; };
 		A8971C403840E21E391C5AD35A763DF2 /* Pods-LinkedME_iOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LinkedME_iOS-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B552D36FE0B333F1D3036D375058F27D /* LMServerRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LMServerRequest.h; sourceTree = "<group>"; };
-		B5E10E6DCB41ACBC5B3AE9FE3C676C9C /* LMPreferenceHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LMPreferenceHelper.h; sourceTree = "<group>"; };
-		BABFC4E4BE46CBD131DACE6757C3D478 /* LMCloseRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMCloseRequest.h; path = LinkedME_iOS/Classes/LMCloseRequest.h; sourceTree = "<group>"; };
-		BBEB18F8FF9F59DBA86763AD26D40996 /* LMLinkCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LMLinkCache.h; sourceTree = "<group>"; };
-		C14B7072E89D236901915C0D52D388F9 /* LMLinkData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LMLinkData.m; sourceTree = "<group>"; };
-		C1DB75C6DF49D9C548365C0E4C30B355 /* LMEncodingUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMEncodingUtils.h; path = LinkedME_iOS/Classes/LMEncodingUtils.h; sourceTree = "<group>"; };
-		CAE7A576E9B084EAB194FAFDBFC1E7D9 /* LMStrongMatchHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMStrongMatchHelper.h; path = LinkedME_iOS/Classes/LMStrongMatchHelper.h; sourceTree = "<group>"; };
-		D8741EA4C7B6E4CEE739EC0FD0BBEA7F /* LMKeychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMKeychain.m; path = LinkedME_iOS/Classes/LMKeychain.m; sourceTree = "<group>"; };
-		DA1ECDA5F9B96337EC23D1B76FF30725 /* LMSimulateIDFA.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMSimulateIDFA.h; path = LinkedME_iOS/Classes/LMSimulateIDFA.h; sourceTree = "<group>"; };
+		A9A6D3B139FE378561546FC04F102251 /* LMSetIdentityRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMSetIdentityRequest.h; path = LinkedME_iOS/Classes/LMSetIdentityRequest.h; sourceTree = "<group>"; };
+		AF34C6328111D5CA21DD20EB0944B0B7 /* LMPreferenceHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LMPreferenceHelper.m; sourceTree = "<group>"; };
+		B2E613D19F9341545BD15846249699E1 /* LMStrongMatchHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMStrongMatchHelper.m; path = LinkedME_iOS/Classes/LMStrongMatchHelper.m; sourceTree = "<group>"; };
+		B72BB5E836F70EB2C479E059475BF1B7 /* LMError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMError.m; path = LinkedME_iOS/Classes/LMError.m; sourceTree = "<group>"; };
+		B7D2999556F5F1E832F193125F10EBA5 /* LMContentDiscoveryManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMContentDiscoveryManager.m; path = LinkedME_iOS/Classes/LMContentDiscoveryManager.m; sourceTree = "<group>"; };
+		B8CA49DD541AAA1D0005FCC727FDD9E1 /* LMUniversalObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LMUniversalObject.m; sourceTree = "<group>"; };
+		BCAF2DF3624874C43A601B1238503288 /* LM-SDK-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "LM-SDK-Prefix.pch"; path = "LinkedME_iOS/Classes/LM-SDK-Prefix.pch"; sourceTree = "<group>"; };
+		BE9814433F43A01CC9DF97BD21477A7A /* LMTrackingConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMTrackingConstants.h; path = LinkedME_iOS/Classes/LMTrackingConstants.h; sourceTree = "<group>"; };
+		C3BED0F70504E992E6BDE69A87775038 /* LMRegisterViewRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMRegisterViewRequest.m; path = LinkedME_iOS/Classes/LMRegisterViewRequest.m; sourceTree = "<group>"; };
+		C77B86FDDBB9CCE1F1129ED206F2FE5B /* LMSystemObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMSystemObserver.h; path = LinkedME_iOS/Classes/LMSystemObserver.h; sourceTree = "<group>"; };
+		CAC4B0CD4532BB2EA0196A7E74B13FC6 /* LMBaseEntity.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMBaseEntity.m; path = LinkedME_iOS/Classes/LMBaseEntity.m; sourceTree = "<group>"; };
+		CBD802F7C2E505D4586FA5B4B81CC9FA /* LMShortUrlRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMShortUrlRequest.m; path = LinkedME_iOS/Classes/LMShortUrlRequest.m; sourceTree = "<group>"; };
+		D22CFAB817A4C436D4D3BA78A638BF63 /* LMDeviceInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMDeviceInfo.h; path = LinkedME_iOS/Classes/LMDeviceInfo.h; sourceTree = "<group>"; };
+		D63DC08B358BF497B679A0B44D65A4A3 /* LMInstallRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMInstallRequest.h; path = LinkedME_iOS/Classes/LMInstallRequest.h; sourceTree = "<group>"; };
 		DD788C6CA24725E47BA6F67E104CF95F /* Pods-LinkedME_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LinkedME_iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		E623740D5BCEE9D50A636AF86D2B2E1F /* LMSpotlightUrlRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMSpotlightUrlRequest.h; path = LinkedME_iOS/Classes/LMSpotlightUrlRequest.h; sourceTree = "<group>"; };
-		E6559787ADA56974D29285EA068A89DC /* LMUniversalObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LMUniversalObject.m; sourceTree = "<group>"; };
-		ED08AD079FC69019DCB8E17694908173 /* LMLinkCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LMLinkCache.m; sourceTree = "<group>"; };
+		E02D4C0DECF4EF7CBC9D8426E2F1B532 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		E6307F7B11C242F80CAD07977B9F7398 /* LMDeviceInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMDeviceInfo.m; path = LinkedME_iOS/Classes/LMDeviceInfo.m; sourceTree = "<group>"; };
+		E717519030C0B21272FA31DC9328C02A /* LinkedME_iOS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LinkedME_iOS.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E77F64BE90E36FD65F104E0529C00589 /* LMContentDiscoveryManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMContentDiscoveryManager.h; path = LinkedME_iOS/Classes/LMContentDiscoveryManager.h; sourceTree = "<group>"; };
+		E7C4B8EB69155AEB353A6DE506092111 /* LMServerResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LMServerResponse.h; sourceTree = "<group>"; };
+		E9994F6B1F9C1D8F7EFE572AE221284B /* LMLinkCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LMLinkCache.h; sourceTree = "<group>"; };
 		ED3B5FD46C78CB8D8D247B126ED15DD0 /* Pods-LinkedME_iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LinkedME_iOS-dummy.m"; sourceTree = "<group>"; };
-		EE3F1DB489595CED633C5022FC563E98 /* LMAppConnect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMAppConnect.m; path = LinkedME_iOS/Classes/LMAppConnect.m; sourceTree = "<group>"; };
-		EE9C0C69DB123CC33D4C7AC31C0B853A /* LMCloseRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMCloseRequest.m; path = LinkedME_iOS/Classes/LMCloseRequest.m; sourceTree = "<group>"; };
-		F38C0D137033472D49BCA145044276EE /* LMStrongMatchHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMStrongMatchHelper.m; path = LinkedME_iOS/Classes/LMStrongMatchHelper.m; sourceTree = "<group>"; };
-		F58BBCB3B8C8EBCA8F050EEBA1D9FA4A /* LMLogoutRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMLogoutRequest.m; path = LinkedME_iOS/Classes/LMLogoutRequest.m; sourceTree = "<group>"; };
-		F62219A74AA60D153C9D9613350B993E /* LMSystemObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMSystemObserver.h; path = LinkedME_iOS/Classes/LMSystemObserver.h; sourceTree = "<group>"; };
-		FEFE2F3E6A76737A5AC86289D60704EC /* LMSetIdentityRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMSetIdentityRequest.h; path = LinkedME_iOS/Classes/LMSetIdentityRequest.h; sourceTree = "<group>"; };
+		EF789BA53B7DB9928C83267DCD042FAD /* LKMEConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKMEConfig.h; path = LinkedME_iOS/Classes/LKMEConfig.h; sourceTree = "<group>"; };
+		F07A448E47F8492E605C87B8ED2CD165 /* LMServerRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LMServerRequest.h; sourceTree = "<group>"; };
+		F56AE7EF0CECAF9DD5380A794D71FBC6 /* LMKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMKeychain.h; path = LinkedME_iOS/Classes/LMKeychain.h; sourceTree = "<group>"; };
+		F5B0C2AAF63A5BBFCAA9CC817F5CCBE7 /* LMUniversalObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LMUniversalObject.h; sourceTree = "<group>"; };
+		F5C46D5E2A807342B1F01706C80EA979 /* LMSystemObserver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LMSystemObserver.m; path = LinkedME_iOS/Classes/LMSystemObserver.m; sourceTree = "<group>"; };
+		F7082832AE645556BB73BEBC1649B40C /* LMConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LMConstants.h; path = LinkedME_iOS/Classes/LMConstants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,77 +187,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		01787D2543934C98442F34822E023164 /* LinkedME_iOS */ = {
+		06927981277993E5001FE481BAC7049C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				35870E5946012B6C58E6A94E17E90877 /* LKMEConfig.h */,
-				5ECB01AE7DA80D7EA6ABBF4CAA1E805C /* LM-SDK-Prefix.pch */,
-				22CE174BB4F92152FACE1F6D027D7602 /* LMAppConnect.h */,
-				EE3F1DB489595CED633C5022FC563E98 /* LMAppConnect.m */,
-				5DDB896169C8FEA87F6432AB35CE04CA /* LMBaseEntity.h */,
-				1D4E9343B7581595AADC9ED719312468 /* LMBaseEntity.m */,
-				BABFC4E4BE46CBD131DACE6757C3D478 /* LMCloseRequest.h */,
-				EE9C0C69DB123CC33D4C7AC31C0B853A /* LMCloseRequest.m */,
-				7A962BA5A71365A93F9087A1EDFDABCF /* LMConstants.h */,
-				34CEE67CB40B615EB431144456043C53 /* LMConstants.m */,
-				46E17239C6881BCE8BC32D8B3BC3FD3F /* LMContentDiscoveryManager.h */,
-				794097CB0FB5EC0337E5F65EE11E4FE3 /* LMContentDiscoveryManager.m */,
-				9A3C0167B00D3220A23BF2B36B105022 /* LMDeviceInfo.h */,
-				5B5AEF21409330CD7CE14717418EB8C3 /* LMDeviceInfo.m */,
-				C1DB75C6DF49D9C548365C0E4C30B355 /* LMEncodingUtils.h */,
-				6BB83DB974B816B8E79AAB9187544AF3 /* LMEncodingUtils.m */,
-				00E635FE328DFC7E4701ADE88504874A /* LMError.h */,
-				3EBE7A256B6BD443C149AC1EEA9A1A5D /* LMError.m */,
-				3371CF85ED5EE331B5A5D4AC1916FFE6 /* LMInstallRequest.h */,
-				1B11E6216AA7133361A0DB1CD362C444 /* LMInstallRequest.m */,
-				3098D9097B8BA914B3AB4913C84DABBE /* LMKeychain.h */,
-				D8741EA4C7B6E4CEE739EC0FD0BBEA7F /* LMKeychain.m */,
-				1D12B0407A99B015CBE4C1B062FBCEB5 /* LMLoadRewardsRequest.h */,
-				1483CBD64C3103F884834406A677287D /* LMLoadRewardsRequest.m */,
-				1D8D8DE535025D3EED81FFD6ED195339 /* LMLogoutRequest.h */,
-				F58BBCB3B8C8EBCA8F050EEBA1D9FA4A /* LMLogoutRequest.m */,
-				3DA58B1E6872DC23E69043B8AD96D970 /* LMOpenRequest.h */,
-				77C59A5C76E33037554537E223545D1E /* LMOpenRequest.m */,
-				2B0BE6AA23EDF6BE591D9CDB73E9BB01 /* LMRegisterViewRequest.h */,
-				8D2093A2965AE5648AD62630A7DBBDBD /* LMRegisterViewRequest.m */,
-				FEFE2F3E6A76737A5AC86289D60704EC /* LMSetIdentityRequest.h */,
-				8972E0D569B64E3A61BFF2125CEF681E /* LMSetIdentityRequest.m */,
-				836397E5ADAD6772458ED8CCCE8975B0 /* LMShortUrlRequest.h */,
-				78EF0CB62BB3982C5A8701AD2795B840 /* LMShortUrlRequest.m */,
-				DA1ECDA5F9B96337EC23D1B76FF30725 /* LMSimulateIDFA.h */,
-				5CBD1F4339A2E32D5C2E48C221219A50 /* LMSimulateIDFA.m */,
-				E623740D5BCEE9D50A636AF86D2B2E1F /* LMSpotlightUrlRequest.h */,
-				5F9EB1AACB79B62174EEDC745237E1CA /* LMSpotlightUrlRequest.m */,
-				CAE7A576E9B084EAB194FAFDBFC1E7D9 /* LMStrongMatchHelper.h */,
-				F38C0D137033472D49BCA145044276EE /* LMStrongMatchHelper.m */,
-				F62219A74AA60D153C9D9613350B993E /* LMSystemObserver.h */,
-				65F5363E745E1E8C1D47982E7AA4B580 /* LMSystemObserver.m */,
-				4EA3B46D3CE9E768BA6DECC983660F5F /* LMTrackingConstants.h */,
-				672FB65749C13227BB859C6558FBD6D3 /* LMTrackingConstants.m */,
-				3095B47619B7D401BDBF0D86EC443971 /* Pod */,
-				C9CA83407E36C73DFB09A68B356F25A5 /* Public */,
-				EA42E3BF952F6BB8BA96647780D617A9 /* Support Files */,
+				32167436F99BABC5565389E8AA358F61 /* LinkedME_iOS-dummy.m */,
+				103FEB050CA37C750C48049410325B64 /* LinkedME_iOS-prefix.pch */,
+				4E995370F05314B4929E40204B2841DD /* LinkedME_iOS.debug.xcconfig */,
+				21129564A25F86177A69CD39FF8E4D1E /* LinkedME_iOS.release.xcconfig */,
 			);
-			name = LinkedME_iOS;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		1BF7B5EEAE9A25D09FEDB5256B07C822 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				01787D2543934C98442F34822E023164 /* LinkedME_iOS */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		3095B47619B7D401BDBF0D86EC443971 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				492F65C2B4BDBCE8CA4B46CAD13F305A /* LICENSE */,
-				279E6B855B9DDA52FFE29C3F465898E2 /* LinkedME_iOS.podspec */,
-				096FA1FDCCC74FD3DE8AE8E0D5F81907 /* README.md */,
-			);
-			name = Pod;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LinkedME_iOS";
 			sourceTree = "<group>";
 		};
 		4C61CED6E5CCAA3FF5A13391BADB60EF /* Pods-LinkedME_iOS */ = {
@@ -272,6 +212,90 @@
 			path = "Target Support Files/Pods-LinkedME_iOS";
 			sourceTree = "<group>";
 		};
+		57E3B5C9D2355A20AE60F6614E0646AF /* LinkedME_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EF789BA53B7DB9928C83267DCD042FAD /* LKMEConfig.h */,
+				BCAF2DF3624874C43A601B1238503288 /* LM-SDK-Prefix.pch */,
+				22DE8CA1A7D9A1E884AE8494E7C1C438 /* LMAppConnect.h */,
+				387A82B116AD6ED50A1CB81B5B22FB65 /* LMAppConnect.m */,
+				577B574601E7434573D6283B53E6120C /* LMBaseEntity.h */,
+				CAC4B0CD4532BB2EA0196A7E74B13FC6 /* LMBaseEntity.m */,
+				84BA8E0E78042F1E38420F9B18503ED7 /* LMCloseRequest.h */,
+				95EEAC02610B85EAD24B59826039D647 /* LMCloseRequest.m */,
+				F7082832AE645556BB73BEBC1649B40C /* LMConstants.h */,
+				5D48546BA1835C95E65A5DE86EFCFCAD /* LMConstants.m */,
+				E77F64BE90E36FD65F104E0529C00589 /* LMContentDiscoveryManager.h */,
+				B7D2999556F5F1E832F193125F10EBA5 /* LMContentDiscoveryManager.m */,
+				D22CFAB817A4C436D4D3BA78A638BF63 /* LMDeviceInfo.h */,
+				E6307F7B11C242F80CAD07977B9F7398 /* LMDeviceInfo.m */,
+				8E7B801986F497D032034CF0240DD167 /* LMEncodingUtils.h */,
+				3FF02CEF52F2BC52F4F703C1B3AE6F05 /* LMEncodingUtils.m */,
+				5A06E70CA62D185435FDE6CEF6D36F9F /* LMError.h */,
+				B72BB5E836F70EB2C479E059475BF1B7 /* LMError.m */,
+				D63DC08B358BF497B679A0B44D65A4A3 /* LMInstallRequest.h */,
+				0C763C71A16D8EC59E97BFC591F601D1 /* LMInstallRequest.m */,
+				F56AE7EF0CECAF9DD5380A794D71FBC6 /* LMKeychain.h */,
+				170651702E0C615AA10A6531E0D2C0F5 /* LMKeychain.m */,
+				8FBD820C17D7FFCCCF5C285D818C6502 /* LMLoadRewardsRequest.h */,
+				7B5E0A210F07954F1DD175F53EBC6359 /* LMLoadRewardsRequest.m */,
+				67F42476EB94B2BFC8BF49ECEE11E992 /* LMLogoutRequest.h */,
+				6BB519AC3280BED1D12E89B2EB03C70E /* LMLogoutRequest.m */,
+				3E51F4332316B69DB6ADBBCA80A46039 /* LMOpenRequest.h */,
+				A6BBF0B3B8D95B6407E7EEC2C2E0B67D /* LMOpenRequest.m */,
+				9AD4B2246615C9324AC3886E0437BD35 /* LMRegisterViewRequest.h */,
+				C3BED0F70504E992E6BDE69A87775038 /* LMRegisterViewRequest.m */,
+				A9A6D3B139FE378561546FC04F102251 /* LMSetIdentityRequest.h */,
+				55BCF03BB2DA8A6D154DB175DB069485 /* LMSetIdentityRequest.m */,
+				076AC22370628D49DDB8443F4E286163 /* LMShortUrlRequest.h */,
+				CBD802F7C2E505D4586FA5B4B81CC9FA /* LMShortUrlRequest.m */,
+				53636AB33811451C13BDA8246786FE77 /* LMSpotlightUrlRequest.h */,
+				605547127BD49C87BB100A1C800CFF0E /* LMSpotlightUrlRequest.m */,
+				3BDA1D5482CE3872C03B57315D0CD9EC /* LMStrongMatchHelper.h */,
+				B2E613D19F9341545BD15846249699E1 /* LMStrongMatchHelper.m */,
+				C77B86FDDBB9CCE1F1129ED206F2FE5B /* LMSystemObserver.h */,
+				F5C46D5E2A807342B1F01706C80EA979 /* LMSystemObserver.m */,
+				BE9814433F43A01CC9DF97BD21477A7A /* LMTrackingConstants.h */,
+				24E0A5968FC4FFB1328F735693208E4B /* LMTrackingConstants.m */,
+				D6395E8E37CBD14B17D7EB9DC84542F3 /* Pod */,
+				72EA6BD8B296B7A2BB4D94AC1D810057 /* Public */,
+				06927981277993E5001FE481BAC7049C /* Support Files */,
+			);
+			name = LinkedME_iOS;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		72EA6BD8B296B7A2BB4D94AC1D810057 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				8674733C48E8CA740E485A791150551C /* LinkedME.h */,
+				7AA7BF99663CB99809F14F96E158A263 /* LinkedME.m */,
+				5AF32787D1AAE013E82943AE1FE0D2FD /* LMApplication.h */,
+				75D9A2D5BC1553B7652D60800DA0DC50 /* LMApplication.m */,
+				9EAC1BB6C6D5A92EA7402B6188DAB2B1 /* LMDeepLinkingController.h */,
+				E9994F6B1F9C1D8F7EFE572AE221284B /* LMLinkCache.h */,
+				2FEEFEEF183D35D178BFC675B3A7511E /* LMLinkCache.m */,
+				79E508A98599425E21C67E63877B14CC /* LMLinkData.h */,
+				0DA5AF378101D1ABE59F101F39FDD9A7 /* LMLinkData.m */,
+				99F41FDA52776EF3EE9F66EC9FAFF30F /* LMLinkProperties.h */,
+				06D6ABF2201E5F270DDD1C04D264C070 /* LMLinkProperties.m */,
+				252AC5B3369078970055F0F68596DB69 /* LMPreferenceHelper.h */,
+				AF34C6328111D5CA21DD20EB0944B0B7 /* LMPreferenceHelper.m */,
+				737246D620EAEA7262E50FEE3FC82E5F /* LMServerInterface.h */,
+				7E89A1715C899DEF3145F729BDAD198B /* LMServerInterface.m */,
+				F07A448E47F8492E605C87B8ED2CD165 /* LMServerRequest.h */,
+				9BF8A8CB76DA9B0EBACF5B94210060F6 /* LMServerRequest.m */,
+				9CB0F410C5C3572DF30254390AD6A71A /* LMServerRequestQueue.h */,
+				0485C9D55D5BA94020251C30F9503F40 /* LMServerRequestQueue.m */,
+				E7C4B8EB69155AEB353A6DE506092111 /* LMServerResponse.h */,
+				52C3A507EA0B214F09456343FB0C0BAF /* LMServerResponse.m */,
+				F5B0C2AAF63A5BBFCAA9CC817F5CCBE7 /* LMUniversalObject.h */,
+				B8CA49DD541AAA1D0005FCC727FDD9E1 /* LMUniversalObject.m */,
+			);
+			name = Public;
+			path = LinkedME_iOS/Classes/Public;
+			sourceTree = "<group>";
+		};
 		A7646F664CBEBAFF7D8070B4162B928D /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -280,44 +304,25 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		C9CA83407E36C73DFB09A68B356F25A5 /* Public */ = {
-			isa = PBXGroup;
-			children = (
-				631D74BB8B573853561A54B3AA91DE7B /* LinkedME.h */,
-				0E3BF2D29472B613C0B0E3A7EFD6C871 /* LinkedME.m */,
-				7E93B61914B787BFBA2C84032BA0F2C7 /* LMDeepLinkingController.h */,
-				BBEB18F8FF9F59DBA86763AD26D40996 /* LMLinkCache.h */,
-				ED08AD079FC69019DCB8E17694908173 /* LMLinkCache.m */,
-				41A9956A13A8F11201EED7159BDAF8FD /* LMLinkData.h */,
-				C14B7072E89D236901915C0D52D388F9 /* LMLinkData.m */,
-				6F7F7B7579F1D2AA07E5EA0D375B359E /* LMLinkProperties.h */,
-				4B9AD4075E345EBB6B4EE8CC169D550A /* LMLinkProperties.m */,
-				B5E10E6DCB41ACBC5B3AE9FE3C676C9C /* LMPreferenceHelper.h */,
-				8BCEEA33F33C414AAC5C1E3E03C00AB0 /* LMPreferenceHelper.m */,
-				2F2DDEC21C6EC1E2283933873AFEE4C1 /* LMServerInterface.h */,
-				97CE20928A9D6D2936542F1F2D3B0EC4 /* LMServerInterface.m */,
-				B552D36FE0B333F1D3036D375058F27D /* LMServerRequest.h */,
-				8CA58858D3C97F389BDE6D62FAB2ABC2 /* LMServerRequest.m */,
-				6877CA44439C709480A26996432E50E5 /* LMServerRequestQueue.h */,
-				95F19586B98BF179A16B46C773B690B0 /* LMServerRequestQueue.m */,
-				1075771DB7A16CBECAE2DB6E0F221832 /* LMServerResponse.h */,
-				A482284A9F68364E8010AFA3A8648AEC /* LMServerResponse.m */,
-				1A0A60BAC0FC95EC7162A712380B6B28 /* LMUniversalObject.h */,
-				E6559787ADA56974D29285EA068A89DC /* LMUniversalObject.m */,
-			);
-			name = Public;
-			path = LinkedME_iOS/Classes/Public;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				1BF7B5EEAE9A25D09FEDB5256B07C822 /* Development Pods */,
+				ED0E0678722C67C97FCB5F3D551007E0 /* Development Pods */,
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
 				DC326B8C26A7FD5A680C4B575794E241 /* Products */,
 				A7646F664CBEBAFF7D8070B4162B928D /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		D6395E8E37CBD14B17D7EB9DC84542F3 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				A0B7EA91D36D797A86C23B7CEA66EF7D /* LICENSE */,
+				E717519030C0B21272FA31DC9328C02A /* LinkedME_iOS.podspec */,
+				E02D4C0DECF4EF7CBC9D8426E2F1B532 /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
@@ -336,57 +341,54 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EA42E3BF952F6BB8BA96647780D617A9 /* Support Files */ = {
+		ED0E0678722C67C97FCB5F3D551007E0 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4D2ED7B31ED2696467AF07185DDCFF06 /* LinkedME_iOS.xcconfig */,
-				71267918F80973ED4C669F8CA3AAF3B3 /* LinkedME_iOS-dummy.m */,
-				6E56158CED979A204ADEEF49578270BF /* LinkedME_iOS-prefix.pch */,
+				57E3B5C9D2355A20AE60F6614E0646AF /* LinkedME_iOS */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/LinkedME_iOS";
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		A16F79EEA87C01CF2FD3B4010D4A5255 /* Headers */ = {
+		AA9E82E72A89B29FCCA527A4FA5EA345 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CE4A7103FBAB60B12F8949BD0C5D3C7 /* LinkedME.h in Headers */,
-				4D8C23C09D56F811EF415155972F93B5 /* LKMEConfig.h in Headers */,
-				4EC7C704CB3530FBBA31FD9B8AABDF74 /* LMAppConnect.h in Headers */,
-				EDAEAC902AE6F7C832B0C05540570644 /* LMBaseEntity.h in Headers */,
-				CC1CE58832D8EFCFF8A7FBF189AE0E95 /* LMCloseRequest.h in Headers */,
-				B903B14A34CA71D3A9BDD6846647FD79 /* LMConstants.h in Headers */,
-				089BD386AE06E0384E933BFA6678D2C4 /* LMContentDiscoveryManager.h in Headers */,
-				7E8515CB2A21CDC4C464076111ECBCEE /* LMDeepLinkingController.h in Headers */,
-				A1D5E01D808B371951065BC709664490 /* LMDeviceInfo.h in Headers */,
-				93A14A1A4845324D829812E23F4D3AA9 /* LMEncodingUtils.h in Headers */,
-				0FB1085F4D4BD639B021D5EFA4A6C06A /* LMError.h in Headers */,
-				B2E1A61CE847956373ED0DBE778ADC22 /* LMInstallRequest.h in Headers */,
-				019B1A8B362851421B84916F484990C8 /* LMKeychain.h in Headers */,
-				A00D7F76C53864E53FB2A290A3D60E30 /* LMLinkCache.h in Headers */,
-				A389098B07ACA09CD0D9675B7A8972F9 /* LMLinkData.h in Headers */,
-				9BA263F5B636DBF0FA200534BAC49FC8 /* LMLinkProperties.h in Headers */,
-				B4D067E98B8809D49DCDB2AD1BAE8C13 /* LMLoadRewardsRequest.h in Headers */,
-				12E8B107FFFBA99BE96371911B238671 /* LMLogoutRequest.h in Headers */,
-				B26560BE7048BAE5B760D88B6ECFF6B8 /* LMOpenRequest.h in Headers */,
-				E1944B96F3003DA448AF00C1413793B8 /* LMPreferenceHelper.h in Headers */,
-				AC2C4DCA551FB169821806C98C8FD043 /* LMRegisterViewRequest.h in Headers */,
-				B0163CFEAFABFB377E98B5791E669295 /* LMServerInterface.h in Headers */,
-				446B400A8C3BF416A1ED2C3BEAC6C4D5 /* LMServerRequest.h in Headers */,
-				32EB1D4FF0549B2D61D6026749C88447 /* LMServerRequestQueue.h in Headers */,
-				E3DFF9E46D8042D2E06B3AA59579F92A /* LMServerResponse.h in Headers */,
-				8058A6389409E616F83B22C6096DDCAC /* LMSetIdentityRequest.h in Headers */,
-				2B6F90CBF0CD1F3C126393C03CF8C985 /* LMShortUrlRequest.h in Headers */,
-				BCC10E5F16A79B6395991C87DFE775A8 /* LMSimulateIDFA.h in Headers */,
-				2CFC41FD6D573624D6E84BF0BAD24816 /* LMSpotlightUrlRequest.h in Headers */,
-				EAA8EE8F592585E3DEE95B75F09036CD /* LMStrongMatchHelper.h in Headers */,
-				A7582034682F21E46BAEAE8D544EB0F9 /* LMSystemObserver.h in Headers */,
-				913F1217BFD8458037E41C1DE773630E /* LMTrackingConstants.h in Headers */,
-				3005403143BFBBAE4F67593B7D88B8A2 /* LMUniversalObject.h in Headers */,
+				0E51E1CC6B51F4C9BF54AF1AF6FF685D /* LinkedME.h in Headers */,
+				6B2EC8B28B606D0C555DC26F931F60B0 /* LKMEConfig.h in Headers */,
+				8CFAE9EB62362D830A20B26D6EBC17C6 /* LMAppConnect.h in Headers */,
+				4E734C887294897CBD361C821C856892 /* LMApplication.h in Headers */,
+				06AA3C864B31289E7CDE8B571E712E47 /* LMBaseEntity.h in Headers */,
+				6F82117D485B14E767276D4338546532 /* LMCloseRequest.h in Headers */,
+				1CC16E77F48F5975D514EB3767409D53 /* LMConstants.h in Headers */,
+				A808890DADC85B9649D160F1372D2D53 /* LMContentDiscoveryManager.h in Headers */,
+				79F362622028D91D44511A6BFDDF4B98 /* LMDeepLinkingController.h in Headers */,
+				77AD5213456598BB5C17888AD13DD02D /* LMDeviceInfo.h in Headers */,
+				760398BE1DD9187E649DB029FCF9EB32 /* LMEncodingUtils.h in Headers */,
+				8A65A955D110B9048AAC8C3531C232B9 /* LMError.h in Headers */,
+				C1FAEEF40ECCCD3FFD4BC200172BC1F6 /* LMInstallRequest.h in Headers */,
+				012FB1C3CD5EFBB94FFA649DD28CF867 /* LMKeychain.h in Headers */,
+				426217E6DB51F0830E75D79D1AC18AE6 /* LMLinkCache.h in Headers */,
+				396AC8767ACF34E70091D3B3720DF785 /* LMLinkData.h in Headers */,
+				BDDD875FC4A99A5E5B7FEB6252C729A2 /* LMLinkProperties.h in Headers */,
+				E32C7574A8F078D70BBAD1C321F5452A /* LMLoadRewardsRequest.h in Headers */,
+				4D5DE5BD371FB1D1632C68CF0ABD1302 /* LMLogoutRequest.h in Headers */,
+				01B88A7DC2A1692A9D8FA82D70ED5DA7 /* LMOpenRequest.h in Headers */,
+				9FB04B088867F915C24CC1B39040B103 /* LMPreferenceHelper.h in Headers */,
+				E942D097DD651979C49CCAF0C803ABDA /* LMRegisterViewRequest.h in Headers */,
+				D43EDB4FDBA68588462FEDA4671FF575 /* LMServerInterface.h in Headers */,
+				ED636E2C8B3131CF8422BABF2CAD3D30 /* LMServerRequest.h in Headers */,
+				937D7A84F3C9CC5714B880920018ABA5 /* LMServerRequestQueue.h in Headers */,
+				E1F681485D8D3AD34A2823CF7109DCC0 /* LMServerResponse.h in Headers */,
+				50E929E3F8366A6B01EF2E7270ECE167 /* LMSetIdentityRequest.h in Headers */,
+				3C1CB6EC2BC177853FEEA18D5E421161 /* LMShortUrlRequest.h in Headers */,
+				DA9F413D5190AB2205CCBB398602A7A4 /* LMSpotlightUrlRequest.h in Headers */,
+				7E28406C924046BE8B410463C4BF6938 /* LMStrongMatchHelper.h in Headers */,
+				B240B7133A6077E3B3AE595D81ADE716 /* LMSystemObserver.h in Headers */,
+				963008CD6B9CB9D03B5253C1F264C415 /* LMTrackingConstants.h in Headers */,
+				DE3C2AC04B19319373CC2DD12AC62331 /* LMUniversalObject.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,8 +424,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B571C76CC6EC8EC19570DD0EFF8416DE /* Build configuration list for PBXNativeTarget "LinkedME_iOS" */;
 			buildPhases = (
-				A16F79EEA87C01CF2FD3B4010D4A5255 /* Headers */,
-				53A45679F9C04C437399EA0942BD5D26 /* Sources */,
+				AA9E82E72A89B29FCCA527A4FA5EA345 /* Headers */,
+				D77762CD6DF86F788584CE029C1067D2 /* Sources */,
 				9490E44655A364774163129B942F9414 /* Frameworks */,
 			);
 			buildRules = (
@@ -450,6 +452,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = DC326B8C26A7FD5A680C4B575794E241 /* Products */;
@@ -463,43 +466,43 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		53A45679F9C04C437399EA0942BD5D26 /* Sources */ = {
+		D77762CD6DF86F788584CE029C1067D2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30A0F97D62C21350D3B3C4BB8DB62E38 /* LinkedME.m in Sources */,
-				94605F24DE3134BE895D9326E49EE1C6 /* LinkedME_iOS-dummy.m in Sources */,
-				79A5BE4A616E0AE9783D27478C8CB26B /* LM-SDK-Prefix.pch in Sources */,
-				3B18EC5D538C5897922AA1BFB537BDE5 /* LMAppConnect.m in Sources */,
-				A36F42FE38D17604C96D56EFE04D50D5 /* LMBaseEntity.m in Sources */,
-				6DD9630E5902AC9D6C53D7FDA62A3AD6 /* LMCloseRequest.m in Sources */,
-				78B9ED44CB0B2BDA3B99DC77EA77E1D3 /* LMConstants.m in Sources */,
-				E47E491CDC241F56A0FC89FEE3DA286D /* LMContentDiscoveryManager.m in Sources */,
-				D3AD5F398A5BD9D9FC98DC1CDEB55C38 /* LMDeviceInfo.m in Sources */,
-				846B4143E2E72CDB6DE8B078D1E34C2B /* LMEncodingUtils.m in Sources */,
-				4489E8063FCF4EE5416F4B6E29CA2AB5 /* LMError.m in Sources */,
-				B4FE2DABB23702ABF490B8172F1B1E9B /* LMInstallRequest.m in Sources */,
-				A513AC50273266AE3CC4A3598B797C42 /* LMKeychain.m in Sources */,
-				B3C516BBDC897FC871871FECC1D11BF1 /* LMLinkCache.m in Sources */,
-				BB13211D8831EDE6C137C4692BBE56DC /* LMLinkData.m in Sources */,
-				B25001FCF3424D2F3DE356694B44D21B /* LMLinkProperties.m in Sources */,
-				A467108CB4749EF59DD4F4B16B01E812 /* LMLoadRewardsRequest.m in Sources */,
-				B695563C7131C2D88F642DF1E1E90FF6 /* LMLogoutRequest.m in Sources */,
-				53C8707E90BABF14206A6B13B5B37FCA /* LMOpenRequest.m in Sources */,
-				81BE17E66B337D56E5C38B6380D4BF26 /* LMPreferenceHelper.m in Sources */,
-				B1B591E854078E03CDB6CC5BEA0C8E74 /* LMRegisterViewRequest.m in Sources */,
-				E385FE5033185863330D4567603105F5 /* LMServerInterface.m in Sources */,
-				92DB5B213E0CD79910E83612552387E8 /* LMServerRequest.m in Sources */,
-				EA16008589F711B40ECE9B94563C7D4D /* LMServerRequestQueue.m in Sources */,
-				6DA9ECE8DFF2495DA975403CD377371A /* LMServerResponse.m in Sources */,
-				F96C622F8289C60859055507BCF65354 /* LMSetIdentityRequest.m in Sources */,
-				B020FE562D8B0AF6DE0957629385883A /* LMShortUrlRequest.m in Sources */,
-				C507BD0FE97254F279933DF70A281413 /* LMSimulateIDFA.m in Sources */,
-				8F4C7B5FDEF23AB69E857EC73332978C /* LMSpotlightUrlRequest.m in Sources */,
-				D7D82AB31549DC3950A1AE8F6A3B422A /* LMStrongMatchHelper.m in Sources */,
-				5A3493E97AB25CCBFC28E1A4FD4D302F /* LMSystemObserver.m in Sources */,
-				581457A792C6E52155182DF1B638D95C /* LMTrackingConstants.m in Sources */,
-				C84D957C70FDFBD2E0CEA18A12DB4BC3 /* LMUniversalObject.m in Sources */,
+				868DFFE5BBFA817EB478178135CBA6CC /* LinkedME.m in Sources */,
+				45760E0F0C5A819BFABFE1A02B986D33 /* LinkedME_iOS-dummy.m in Sources */,
+				6EC6C6E50142FE18FB1B795F5617D6B2 /* LM-SDK-Prefix.pch in Sources */,
+				C45F061943E122F7926C9576BB089780 /* LMAppConnect.m in Sources */,
+				AB0C1990829CBE9628217DC5538ADE6E /* LMApplication.m in Sources */,
+				CBAE4394FDC210F0DE18806F4FA69980 /* LMBaseEntity.m in Sources */,
+				CDE674C21B9308D90F62797D7755D419 /* LMCloseRequest.m in Sources */,
+				F56E1BDCE87943F542AB9B263165776A /* LMConstants.m in Sources */,
+				E855DC6B1613B6A711CBA79DDBE3AD6A /* LMContentDiscoveryManager.m in Sources */,
+				D46331B687CDF669A5FD216FC9FBCD0C /* LMDeviceInfo.m in Sources */,
+				14E6AF8F472657A53A661180C8C0F0A5 /* LMEncodingUtils.m in Sources */,
+				BCEB3704DD66FDCAC9D9EB69961DCB73 /* LMError.m in Sources */,
+				89E4D68AD212C3530CE78617D6077889 /* LMInstallRequest.m in Sources */,
+				C718A6440DB851F9E7E2F8F513FD703F /* LMKeychain.m in Sources */,
+				96D6FA3F98ADC9514A697296B0098F1D /* LMLinkCache.m in Sources */,
+				83C77B84B000017B1960146B70BB221C /* LMLinkData.m in Sources */,
+				FBA079593374F879E25C2B6E62D43D95 /* LMLinkProperties.m in Sources */,
+				043DE66ED05FD0E7B883A0532DD70A89 /* LMLoadRewardsRequest.m in Sources */,
+				A515E7B063D33BCCB986A6845EB52BA0 /* LMLogoutRequest.m in Sources */,
+				3D7167F8C2935CC2C85B1E0AA2F68E56 /* LMOpenRequest.m in Sources */,
+				9B1A7FD178877550FE2A9CFE1EDDBC15 /* LMPreferenceHelper.m in Sources */,
+				C6595813AB52F88205303365CC7AA876 /* LMRegisterViewRequest.m in Sources */,
+				AFF02FBDEE68B8B91B8FAD05448CB8FF /* LMServerInterface.m in Sources */,
+				E6B590E534E38182A3D1BDD905679F2F /* LMServerRequest.m in Sources */,
+				37DD1EFEB8C1A2CE7C61034567D069F8 /* LMServerRequestQueue.m in Sources */,
+				C04A4FBB9431E94A3502B82088B7905C /* LMServerResponse.m in Sources */,
+				E764E5CA21E5537EAF7D6B0F0A619AEB /* LMSetIdentityRequest.m in Sources */,
+				5093905F7E72086DA1D3581CE1F2557C /* LMShortUrlRequest.m in Sources */,
+				7E33C80229057D3ED141854C6337A56F /* LMSpotlightUrlRequest.m in Sources */,
+				B7E4B7F960A4ED97BEA1A503EB50A020 /* LMStrongMatchHelper.m in Sources */,
+				9365EDE26D7EFD3AD400042AC10E50AF /* LMSystemObserver.m in Sources */,
+				D6C590ED40D4FBB717B3810CE6250FBE /* LMTrackingConstants.m in Sources */,
+				8E977A5BCCDA8242CC7E630CF12F2AF1 /* LMUniversalObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,6 +608,53 @@
 			};
 			name = Release;
 		};
+		688FB4A0DADD2DAFE47E18F32A8A5AA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21129564A25F86177A69CD39FF8E4D1E /* LinkedME_iOS.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/LinkedME_iOS/LinkedME_iOS-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = LinkedME_iOS;
+				PRODUCT_NAME = LinkedME_iOS;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75DA965BF5160F77E1C2152DF9AF2CA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E995370F05314B4929E40204B2841DD /* LinkedME_iOS.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/LinkedME_iOS/LinkedME_iOS-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = LinkedME_iOS;
+				PRODUCT_NAME = LinkedME_iOS;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -669,30 +719,6 @@
 			};
 			name = Debug;
 		};
-		82B658F6DE5CF75168E89AF1D1F5F8EF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D2ED7B31ED2696467AF07185DDCFF06 /* LinkedME_iOS.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/LinkedME_iOS/LinkedME_iOS-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = LinkedME_iOS;
-				PRODUCT_NAME = LinkedME_iOS;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		9EBC76515CF458C322AC536F864D145D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DD788C6CA24725E47BA6F67E104CF95F /* Pods-LinkedME_iOS.debug.xcconfig */;
@@ -710,29 +736,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		CE7D302D65BBAA2B5D928FA5EC1B6D77 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D2ED7B31ED2696467AF07185DDCFF06 /* LinkedME_iOS.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/LinkedME_iOS/LinkedME_iOS-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = LinkedME_iOS;
-				PRODUCT_NAME = LinkedME_iOS;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -761,8 +764,8 @@
 		B571C76CC6EC8EC19570DD0EFF8416DE /* Build configuration list for PBXNativeTarget "LinkedME_iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CE7D302D65BBAA2B5D928FA5EC1B6D77 /* Debug */,
-				82B658F6DE5CF75168E89AF1D1F5F8EF /* Release */,
+				75DA965BF5160F77E1C2152DF9AF2CA6 /* Debug */,
+				688FB4A0DADD2DAFE47E18F32A8A5AA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

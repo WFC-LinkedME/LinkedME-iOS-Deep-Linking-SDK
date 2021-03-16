@@ -20,6 +20,7 @@
 @property (strong, nonatomic) NSDictionary* params;
 @property (strong, nonatomic) NSString* ignoreUAString;
 @property (assign, nonatomic) LMLinkType type;
+@property (assign, nonatomic) BOOL state;
 @property (assign, nonatomic) NSUInteger duration;
 
 @end
@@ -59,16 +60,21 @@
     }
 }
 
-- (void)setupMatchDuration:(NSUInteger)duration
-{
+- (void)setupState:(BOOL)state{
+    if (state) {
+        _state = state;
+        self.data[LINKEDME_REQUEST_KEY_URL_STATE] = @(state);
+    }
+}
+
+- (void)setupMatchDuration:(NSUInteger)duration{
     if (duration > 0) {
         _duration = duration;
         self.data[LINKEDME_REQUEST_KEY_URL_DURATION] = @(duration);
     }
 }
 
-- (void)setupChannel:(NSString*)channel
-{
+- (void)setupChannel:(NSString*)channel{
     if (channel) {
         _channel = channel;
         NSMutableArray *channelArr = [NSMutableArray array];
